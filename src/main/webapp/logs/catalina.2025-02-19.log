@@ -1,0 +1,831 @@
+19-Feb-2025 00:00:00.436 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 00:00:00.872 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 00:00:00.887 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 00:00:05.887 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [14,084] ms
+19-Feb-2025 00:00:05.891 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 00:00:05.922 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 14190 ms
+19-Feb-2025 02:43:36.220 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:43:36.223 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 02:43:36.268 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 02:43:36.271 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 02:43:36.288 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:43:36.306 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:43:57.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 02:43:57.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 02:43:57.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 02:43:57.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 02:43:57.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 02:43:57.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 02:43:57.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 02:43:57.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 02:43:57.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 02:43:57.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 02:43:57.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 02:43:57.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 02:43:57.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 02:43:57.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 02:43:57.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 02:43:57.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 02:43:57.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 02:43:57.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 02:43:57.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 02:43:57.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 02:43:57.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 02:43:57.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=63253:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 02:43:57.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 02:43:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 02:43:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 02:43:57.809 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 02:43:57.883 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:43:57.921 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1046 ms
+19-Feb-2025 02:43:58.055 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 02:43:58.055 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 02:43:58.100 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 02:44:02.931 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 02:44:07.202 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 02:44:07.351 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 02:44:07.354 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 02:44:07.357 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 02:44:07.812 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 02:44:08.528 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 02:44:08.913 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 02:44:08.921 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 02:44:13.766 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [15,665] ms
+19-Feb-2025 02:44:13.768 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:44:13.788 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 15864 ms
+19-Feb-2025 02:45:45.205 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:45:45.208 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 02:45:45.223 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 02:45:45.224 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 02:45:45.230 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 02:45:45.234 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 13:11:48.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 13:11:48.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 13:11:48.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 13:11:48.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 13:11:48.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 13:11:48.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 13:11:48.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 13:11:48.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 13:11:48.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 13:11:48.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 13:11:48.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 13:11:48.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 13:11:48.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 13:11:48.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 13:11:48.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 13:11:48.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 13:11:48.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 13:11:48.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 13:11:48.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 13:11:48.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 13:11:48.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 13:11:48.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=49685:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 13:11:48.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 13:11:48.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 13:11:48.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 13:11:48.467 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 13:11:48.550 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 13:11:48.585 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1064 ms
+19-Feb-2025 13:11:48.690 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 13:11:48.690 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 13:11:48.717 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 13:11:57.026 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 13:11:59.400 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 13:11:59.547 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 13:11:59.550 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 13:11:59.553 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 13:12:00.001 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 13:12:00.970 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 13:12:01.368 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 13:12:01.387 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 13:12:07.057 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [18,340] ms
+19-Feb-2025 13:12:07.061 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 13:12:07.081 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 18495 ms
+19-Feb-2025 13:34:09.185 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 13:34:09.188 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 13:34:09.231 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 13:34:09.232 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 13:34:09.247 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 13:34:09.263 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 19:40:32.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 19:40:32.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 19:40:32.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 19:40:32.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 19:40:32.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 19:40:32.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 19:40:32.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 19:40:32.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 19:40:32.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 19:40:32.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 19:40:32.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 19:40:32.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 19:40:32.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 19:40:32.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 19:40:32.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 19:40:32.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 19:40:32.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 19:40:32.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 19:40:32.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 19:40:32.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=52323:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 19:40:32.953 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 19:40:33.029 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 19:40:33.067 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1077 ms
+19-Feb-2025 19:40:33.156 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 19:40:33.156 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 19:40:33.178 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 19:40:41.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 19:40:41.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 19:40:41.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 19:40:41.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 19:40:41.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 19:40:41.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 19:40:41.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 19:40:41.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 19:40:41.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 19:40:41.985 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 19:40:41.985 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 19:40:41.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 19:40:41.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 19:40:41.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 19:40:41.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 19:40:41.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 19:40:41.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=52326:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 19:40:41.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 19:40:41.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 19:40:41.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 19:40:41.989 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 19:40:42.059 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 19:40:42.094 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1250 ms
+19-Feb-2025 19:40:42.159 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 19:40:42.159 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 19:40:42.173 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 19:40:45.821 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 19:40:48.123 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 19:40:48.304 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 19:40:48.308 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 19:40:48.310 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 19:40:48.771 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 19:40:49.730 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 19:40:50.144 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 19:40:50.153 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 19:40:55.727 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [13,551] ms
+19-Feb-2025 19:40:55.730 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 19:40:55.752 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 13655 ms
+19-Feb-2025 20:24:23.229 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:24:23.233 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 20:24:23.304 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 20:24:23.305 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 20:24:23.318 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:24:23.329 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:24:29.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 20:24:29.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 20:24:29.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 20:24:29.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 20:24:29.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 20:24:29.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 20:24:29.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 20:24:29.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 20:24:29.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 20:24:29.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:24:29.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 20:24:29.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 20:24:29.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 20:24:29.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 20:24:29.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 20:24:29.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 20:24:29.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 20:24:29.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:24:29.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 20:24:29.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 20:24:29.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 20:24:29.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=52931:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 20:24:29.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 20:24:29.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 20:24:29.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 20:24:29.089 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 20:24:29.159 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:24:29.197 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 889 ms
+19-Feb-2025 20:24:29.259 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 20:24:29.259 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 20:24:29.272 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 20:24:32.603 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 20:24:34.727 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 20:24:34.866 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 20:24:34.870 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 20:24:34.873 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 20:24:35.374 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 20:24:36.171 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 20:24:36.587 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 20:24:36.607 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 20:24:42.130 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [12,857] ms
+19-Feb-2025 20:24:42.134 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:24:42.157 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12958 ms
+19-Feb-2025 20:25:02.555 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:25:02.558 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 20:25:02.585 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 20:25:02.586 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 20:25:02.594 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:25:02.601 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:31:33.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 20:31:33.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 20:31:33.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 20:31:33.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 20:31:33.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 20:31:33.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 20:31:33.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 20:31:33.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 20:31:33.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 20:31:33.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:31:33.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 20:31:33.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 20:31:33.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 20:31:33.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 20:31:33.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 20:31:33.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 20:31:33.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 20:31:33.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:31:33.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 20:31:33.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 20:31:33.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 20:31:33.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=53161:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 20:31:33.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 20:31:33.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 20:31:33.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 20:31:33.378 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 20:31:33.443 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:31:33.478 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 918 ms
+19-Feb-2025 20:31:33.543 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 20:31:33.544 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 20:31:33.558 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 20:31:40.025 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 20:31:40.957 SEVERE [localhost-startStop-1] org.apache.catalina.session.StandardManager.startInternal Exception loading sessions from persistent storage
+	java.lang.ClassNotFoundException: com.hau.dto.MyUser
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1420)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1228)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:534)
+		at java.base/java.lang.Class.forName(Class.java:513)
+		at org.apache.catalina.util.CustomObjectInputStream.resolveClass(CustomObjectInputStream.java:160)
+		at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2061)
+		at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1927)
+		at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2252)
+		at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+		at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2618)
+		at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2469)
+		at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+		at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+		at java.base/java.io.ObjectInputStream$FieldValues.<init>(ObjectInputStream.java:2618)
+		at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2469)
+		at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+		at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498)
+		at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1523)
+		at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:1003)
+		at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210)
+		at org.apache.catalina.session.StandardManager.load(StandardManager.java:156)
+		at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:346)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4952)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:661)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:673)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1881)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 20:31:41.019 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+19-Feb-2025 20:31:41.020 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/ChronoLuxWeb] startup failed due to previous errors
+19-Feb-2025 20:31:41.035 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [7,476] ms
+19-Feb-2025 20:31:41.037 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:31:41.071 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7591 ms
+19-Feb-2025 20:32:02.080 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:02.085 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 20:32:02.094 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:02.098 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:15.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 20:32:15.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 20:32:15.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 20:32:15.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 20:32:15.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 20:32:15.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 20:32:15.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 20:32:15.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 20:32:15.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 20:32:15.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:32:15.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 20:32:15.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 20:32:15.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 20:32:15.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 20:32:15.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 20:32:15.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 20:32:15.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 20:32:15.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:32:15.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 20:32:15.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 20:32:15.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 20:32:15.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=53171:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 20:32:15.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 20:32:15.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 20:32:15.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 20:32:15.496 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 20:32:15.561 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:15.598 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 876 ms
+19-Feb-2025 20:32:15.665 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 20:32:15.665 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 20:32:15.682 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 20:32:18.962 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 20:32:19.796 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+19-Feb-2025 20:32:19.797 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/ChronoLuxWeb] startup failed due to previous errors
+19-Feb-2025 20:32:19.812 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [4,129] ms
+19-Feb-2025 20:32:19.814 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:19.838 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4239 ms
+19-Feb-2025 20:32:52.082 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:52.085 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 20:32:52.088 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:52.092 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:58.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 20:32:58.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 20:32:58.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 20:32:58.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 20:32:58.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 20:32:58.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 20:32:58.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 20:32:58.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 20:32:58.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 20:32:58.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:32:58.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 20:32:58.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 20:32:58.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 20:32:58.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 20:32:58.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 20:32:58.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 20:32:58.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 20:32:58.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 20:32:58.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 20:32:58.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 20:32:58.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 20:32:58.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=53183:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 20:32:58.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 20:32:58.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 20:32:58.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 20:32:58.072 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 20:32:58.140 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:32:58.176 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 903 ms
+19-Feb-2025 20:32:58.239 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 20:32:58.239 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 20:32:58.255 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 20:33:01.596 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 20:33:03.796 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 20:33:03.999 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 20:33:04.004 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 20:33:04.008 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 20:33:04.512 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 20:33:05.322 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 20:33:05.805 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 20:33:05.824 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 20:33:11.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [13,559] ms
+19-Feb-2025 20:33:11.818 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:33:11.839 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 13661 ms
+19-Feb-2025 20:52:43.061 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:52:43.064 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 20:52:43.087 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 20:52:43.088 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 20:52:43.100 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 20:52:43.118 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 22:12:03.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 22:12:03.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 22:12:03.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 22:12:03.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 22:12:03.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 22:12:03.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 22:12:03.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 22:12:03.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 22:12:03.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 22:12:03.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 22:12:03.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 22:12:03.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 22:12:03.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 22:12:03.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 22:12:03.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 22:12:03.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 22:12:03.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 22:12:03.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 22:12:03.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 22:12:03.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 22:12:03.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 22:12:03.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=55407:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 22:12:03.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 22:12:03.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 22:12:03.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 22:12:03.206 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 22:12:03.298 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 22:12:03.332 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1080 ms
+19-Feb-2025 22:12:03.425 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 22:12:03.425 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 22:12:03.462 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 22:12:12.244 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 22:12:14.968 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 22:12:15.169 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 22:12:15.174 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 22:12:15.178 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 22:12:15.842 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 22:12:16.976 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 22:12:17.473 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 22:12:17.490 WARN [localhost-startStop-1] org.hibernate.cfg.SettingsFactory.buildSettings Unrecognized value for "hibernate.hbm2ddl.auto": none
+19-Feb-2025 22:12:26.025 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [22,561] ms
+19-Feb-2025 22:12:26.029 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 22:12:26.054 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 22720 ms
+19-Feb-2025 22:40:43.855 WARN [http-nio-8080-exec-10] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 22:40:43.857 ERROR [http-nio-8080-exec-10] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:08:02.707 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:08:02.708 ERROR [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:08:07.380 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:08:07.380 ERROR [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:08:14.825 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:08:14.825 ERROR [http-nio-8080-exec-8] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:11:02.869 WARN [http-nio-8080-exec-1] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:11:02.870 ERROR [http-nio-8080-exec-1] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:11:59.721 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:11:59.722 ERROR [http-nio-8080-exec-2] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:12:08.189 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:12:08.189 ERROR [http-nio-8080-exec-2] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:12:24.577 WARN [http-nio-8080-exec-10] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions SQL Error: 1054, SQLState: 42S22
+19-Feb-2025 23:12:24.578 ERROR [http-nio-8080-exec-10] org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions Unknown column 'userentity0_.points' in 'field list'
+19-Feb-2025 23:13:03.993 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:13:04.003 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 23:13:04.190 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 23:13:04.193 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 23:13:04.246 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:13:04.276 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:13:13.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 23:13:13.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 23:13:13.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 23:13:13.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 23:13:13.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 23:13:13.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 23:13:13.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 23:13:13.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 23:13:13.041 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 23:13:13.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 23:13:13.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 23:13:13.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 23:13:13.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 23:13:13.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 23:13:13.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 23:13:13.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 23:13:13.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 23:13:13.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 23:13:13.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 23:13:13.044 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 23:13:13.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 23:13:13.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=57835:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 23:13:13.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 23:13:13.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 23:13:13.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 23:13:13.046 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 23:13:13.143 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:13:13.199 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1273 ms
+19-Feb-2025 23:13:13.383 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 23:13:13.384 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 23:13:13.426 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 23:13:18.478 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 23:13:21.544 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 23:13:21.754 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 23:13:21.759 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 23:13:21.766 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 23:13:22.452 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 23:13:23.667 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 23:13:24.308 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 23:13:25.348 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000228: Running hbm2ddl schema update
+19-Feb-2025 23:13:25.349 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000102: Fetching database metadata
+19-Feb-2025 23:13:25.391 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000396: Updating schema
+19-Feb-2025 23:13:25.482 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.banner
+19-Feb-2025 23:13:25.483 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [img, modified_by, caption, id, created_date, modified_date, created_by, content]
+19-Feb-2025 23:13:25.483 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:25.484 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:25.541 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill
+19-Feb-2025 23:13:25.542 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [note, address, quantity, gender, date_invoice, receiver_gender, modified_date, display_name, created_by, total, phone, user_id, subtotal, modified_by, voucher_id, receiver_name, id, created_date, receiver_phone, email, payment_method, status]
+19-Feb-2025 23:13:25.543 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b]
+19-Feb-2025 23:13:25.543 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b, primary]
+19-Feb-2025 23:13:25.596 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill_detail
+19-Feb-2025 23:13:25.597 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, product_id]
+19-Feb-2025 23:13:25.598 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+19-Feb-2025 23:13:25.600 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+19-Feb-2025 23:13:25.686 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.brand
+19-Feb-2025 23:13:25.689 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [icon_url, country, modified_by, name, active, banner_url, id, created_date, modified_date, created_by]
+19-Feb-2025 23:13:25.690 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:25.690 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:25.745 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.cart_items
+19-Feb-2025 23:13:25.745 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, quantity, user_id, product_id, modified_by, id, created_date, modified_date, created_by]
+19-Feb-2025 23:13:25.745 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw]
+19-Feb-2025 23:13:25.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw, primary]
+19-Feb-2025 23:13:25.776 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.comment
+19-Feb-2025 23:13:25.777 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, review, product_id, modified_by, name, rating, id, created_date, modified_date, created_by, img_review_url]
+19-Feb-2025 23:13:25.777 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_mxoojfj9tmy8088avf57mpm02, fk_qadidjn2h0dqbc1nseh5bo4ff]
+19-Feb-2025 23:13:25.777 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_mxoojfj9tmy8088avf57mpm02, fk_qadidjn2h0dqbc1nseh5bo4ff, primary]
+19-Feb-2025 23:13:25.807 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.corporation
+19-Feb-2025 23:13:25.808 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [address, img_url, phone, modified_by, about, id, created_date, modified_date, created_by, email, policy]
+19-Feb-2025 23:13:25.808 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:25.808 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:25.850 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product
+19-Feb-2025 23:13:25.851 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [gender, thickness, watch_type, active, description, face_size, modified_date, created_by, glass_material, img_url, price, product_line_id, modified_by, name, id, created_date, strap_material, water_resistant, instock]
+19-Feb-2025 23:13:25.853 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_r2322tdtoib5u3jdxpcvrmb59]
+19-Feb-2025 23:13:25.853 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_r2322tdtoib5u3jdxpcvrmb59, primary]
+19-Feb-2025 23:13:25.911 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product_line
+19-Feb-2025 23:13:25.912 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [warranty_id, icon_url, modified_by, name, active, banner_url, id, created_date, modified_date, created_by, brand_id]
+19-Feb-2025 23:13:25.913 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy]
+19-Feb-2025 23:13:25.913 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy, primary]
+19-Feb-2025 23:13:25.954 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role
+19-Feb-2025 23:13:25.954 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [code, modified_by, name, id, created_date, modified_date, created_by]
+19-Feb-2025 23:13:25.955 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:25.955 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:25.996 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role_detail
+19-Feb-2025 23:13:25.997 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, role_id]
+19-Feb-2025 23:13:25.999 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf]
+19-Feb-2025 23:13:25.999 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf, primary]
+19-Feb-2025 23:13:26.020 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.user
+19-Feb-2025 23:13:26.020 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_date, created_by, reset_password_token, password, img_url, modified_by, voucher_id, id, created_date, fullname, email, status, username]
+19-Feb-2025 23:13:26.021 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ds7rq2hnw61wsi429c3p6xhy6]
+19-Feb-2025 23:13:26.021 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_ds7rq2hnw61wsi429c3p6xhy6, primary]
+19-Feb-2025 23:13:26.060 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.voucher
+19-Feb-2025 23:13:26.062 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [end_day, code, begin_day, modified_by, discount, id, created_date, modified_date, type, created_by]
+19-Feb-2025 23:13:26.062 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:26.063 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:26.111 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.warranty
+19-Feb-2025 23:13:26.112 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_by, id, created_date, modified_date, created_by, content]
+19-Feb-2025 23:13:26.112 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:13:26.112 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:13:26.222 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table banner add column  modified_date datetime
+19-Feb-2025 23:13:26.223 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.226 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  modified_date datetime
+19-Feb-2025 23:13:26.226 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.420 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table brand add column  modified_date datetime
+19-Feb-2025 23:13:26.421 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.424 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table cart_items add column  modified_date datetime
+19-Feb-2025 23:13:26.425 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.429 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table comment add column  modified_date datetime
+19-Feb-2025 23:13:26.430 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.433 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table corporation add column  modified_date datetime
+19-Feb-2025 23:13:26.434 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.436 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product add column  modified_date datetime
+19-Feb-2025 23:13:26.436 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.439 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product_line add column  modified_date datetime
+19-Feb-2025 23:13:26.440 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.443 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table role add column  modified_date datetime
+19-Feb-2025 23:13:26.444 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.445 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table user add column  modified_date datetime
+19-Feb-2025 23:13:26.446 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.500 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table voucher add column  modified_date datetime
+19-Feb-2025 23:13:26.500 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.503 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table warranty add column  modified_date datetime
+19-Feb-2025 23:13:26.503 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:13:26.505 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000232: Schema update complete
+19-Feb-2025 23:13:33.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [20,453] ms
+19-Feb-2025 23:13:33.885 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:13:33.916 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 20712 ms
+19-Feb-2025 23:35:53.052 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:35:53.056 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Feb-2025 23:35:53.103 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+19-Feb-2025 23:35:53.104 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+19-Feb-2025 23:35:53.112 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:35:53.117 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:36:18.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+19-Feb-2025 23:36:18.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+19-Feb-2025 23:36:18.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.5+11-LTS
+19-Feb-2025 23:36:18.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+19-Feb-2025 23:36:18.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 23:36:18.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         G:\apache-tomcat-8.5.92
+19-Feb-2025 23:36:18.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Feb-2025 23:36:18.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Feb-2025 23:36:18.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Feb-2025 23:36:18.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Feb-2025 23:36:18.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Feb-2025 23:36:18.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=G:\apache-tomcat-8.5.92
+19-Feb-2025 23:36:18.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+19-Feb-2025 23:36:18.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+19-Feb-2025 23:36:18.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+19-Feb-2025 23:36:18.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Feb-2025 23:36:18.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\lib\idea_rt.jar=58434:C:\Program Files\JetBrains\IntelliJ IDEA 2024.3\bin
+19-Feb-2025 23:36:18.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+19-Feb-2025 23:36:18.608 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+19-Feb-2025 23:36:18.609 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+19-Feb-2025 23:36:18.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.10.11\;C:\Program Files\Microsoft MPI\Bin\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\Scripts\;E:\SETUP_PROJECT\PYTHON\Python_3.13.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;E:\SETUP_PROJECT\JAVA\JDK\jdk-21.0.5+11\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\.dotnet\tools;C:\Users\Admin\AppData\Roaming\npm;.]
+19-Feb-2025 23:36:18.687 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:36:18.735 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1208 ms
+19-Feb-2025 23:36:18.803 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Feb-2025 23:36:18.803 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+19-Feb-2025 23:36:18.833 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+19-Feb-2025 23:36:22.841 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Feb-2025 23:36:25.483 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+19-Feb-2025 23:36:25.691 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+19-Feb-2025 23:36:25.699 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+19-Feb-2025 23:36:25.702 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+19-Feb-2025 23:36:26.245 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19-Feb-2025 23:36:27.154 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19-Feb-2025 23:36:27.630 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+19-Feb-2025 23:36:28.397 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000228: Running hbm2ddl schema update
+19-Feb-2025 23:36:28.397 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000102: Fetching database metadata
+19-Feb-2025 23:36:28.429 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000396: Updating schema
+19-Feb-2025 23:36:28.491 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.banner
+19-Feb-2025 23:36:28.492 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [img, modified_by, caption, id, created_date, modified_date, created_by, content]
+19-Feb-2025 23:36:28.494 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.494 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.522 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill
+19-Feb-2025 23:36:28.523 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [note, address, quantity, points_used, gender, date_invoice, points_earned, receiver_gender, modified_date, display_name, created_by, total, phone, user_id, subtotal, modified_by, voucher_id, receiver_name, id, created_date, receiver_phone, email, payment_method, status]
+19-Feb-2025 23:36:28.523 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b]
+19-Feb-2025 23:36:28.523 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b, primary]
+19-Feb-2025 23:36:28.548 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill_detail
+19-Feb-2025 23:36:28.549 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, product_id]
+19-Feb-2025 23:36:28.549 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+19-Feb-2025 23:36:28.549 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+19-Feb-2025 23:36:28.591 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.brand
+19-Feb-2025 23:36:28.592 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [icon_url, country, modified_by, name, active, banner_url, id, created_date, modified_date, created_by]
+19-Feb-2025 23:36:28.593 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.593 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.622 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.cart_items
+19-Feb-2025 23:36:28.623 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, quantity, user_id, product_id, modified_by, id, created_date, modified_date, created_by]
+19-Feb-2025 23:36:28.623 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw]
+19-Feb-2025 23:36:28.623 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw, primary]
+19-Feb-2025 23:36:28.660 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.comment
+19-Feb-2025 23:36:28.661 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, review, product_id, modified_by, name, rating, id, created_date, modified_date, created_by, img_review_url]
+19-Feb-2025 23:36:28.662 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_mxoojfj9tmy8088avf57mpm02, fk_qadidjn2h0dqbc1nseh5bo4ff]
+19-Feb-2025 23:36:28.662 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_mxoojfj9tmy8088avf57mpm02, fk_qadidjn2h0dqbc1nseh5bo4ff, primary]
+19-Feb-2025 23:36:28.682 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.corporation
+19-Feb-2025 23:36:28.682 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [address, img_url, phone, modified_by, about, id, created_date, modified_date, created_by, email, policy]
+19-Feb-2025 23:36:28.682 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.682 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.703 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product
+19-Feb-2025 23:36:28.703 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [gender, thickness, watch_type, active, description, face_size, modified_date, created_by, glass_material, img_url, price, product_line_id, modified_by, name, id, created_date, strap_material, water_resistant, instock]
+19-Feb-2025 23:36:28.704 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_r2322tdtoib5u3jdxpcvrmb59]
+19-Feb-2025 23:36:28.704 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_r2322tdtoib5u3jdxpcvrmb59, primary]
+19-Feb-2025 23:36:28.726 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product_line
+19-Feb-2025 23:36:28.727 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [warranty_id, icon_url, modified_by, name, active, banner_url, id, created_date, modified_date, created_by, brand_id]
+19-Feb-2025 23:36:28.727 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy]
+19-Feb-2025 23:36:28.728 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy, primary]
+19-Feb-2025 23:36:28.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role
+19-Feb-2025 23:36:28.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [code, modified_by, name, id, created_date, modified_date, created_by]
+19-Feb-2025 23:36:28.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.764 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role_detail
+19-Feb-2025 23:36:28.764 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, role_id]
+19-Feb-2025 23:36:28.765 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf]
+19-Feb-2025 23:36:28.765 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf, primary]
+19-Feb-2025 23:36:28.783 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.user
+19-Feb-2025 23:36:28.783 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_date, created_by, reset_password_token, points, password, img_url, modified_by, voucher_id, id, created_date, fullname, email, status, username]
+19-Feb-2025 23:36:28.784 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ds7rq2hnw61wsi429c3p6xhy6]
+19-Feb-2025 23:36:28.784 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_ds7rq2hnw61wsi429c3p6xhy6, primary]
+19-Feb-2025 23:36:28.802 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.voucher
+19-Feb-2025 23:36:28.802 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [end_day, code, begin_day, modified_by, discount, id, created_date, modified_date, type, created_by]
+19-Feb-2025 23:36:28.802 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.802 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.816 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.warranty
+19-Feb-2025 23:36:28.816 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_by, id, created_date, modified_date, created_by, content]
+19-Feb-2025 23:36:28.816 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+19-Feb-2025 23:36:28.816 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+19-Feb-2025 23:36:28.874 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table banner add column  modified_date datetime
+19-Feb-2025 23:36:28.875 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.877 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  modified_date datetime
+19-Feb-2025 23:36:28.877 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.879 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  points_earned integer not null
+19-Feb-2025 23:36:28.880 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'points_earned'
+19-Feb-2025 23:36:28.881 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table brand add column  modified_date datetime
+19-Feb-2025 23:36:28.881 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.883 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table cart_items add column  modified_date datetime
+19-Feb-2025 23:36:28.883 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.886 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table comment add column  modified_date datetime
+19-Feb-2025 23:36:28.886 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.887 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table corporation add column  modified_date datetime
+19-Feb-2025 23:36:28.888 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.889 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product add column  modified_date datetime
+19-Feb-2025 23:36:28.889 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.891 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product_line add column  modified_date datetime
+19-Feb-2025 23:36:28.892 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.896 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table role add column  modified_date datetime
+19-Feb-2025 23:36:28.896 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.898 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table user add column  modified_date datetime
+19-Feb-2025 23:36:28.898 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.899 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table voucher add column  modified_date datetime
+19-Feb-2025 23:36:28.900 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.901 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table warranty add column  modified_date datetime
+19-Feb-2025 23:36:28.901 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+19-Feb-2025 23:36:28.901 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000232: Schema update complete
+19-Feb-2025 23:36:35.983 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [17,148] ms
+19-Feb-2025 23:36:35.988 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Feb-2025 23:36:36.020 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 17283 ms

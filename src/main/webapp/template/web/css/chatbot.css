@@ -1,0 +1,107 @@
+/* Ẩn logo mặc định của Rasa */
+.rw-header img {
+    display: none;
+}
+
+/* Header của chatbot */
+.rw-header {
+    background-color: #eabd2b !important;
+}
+
+.rw-header .rw-title {
+    display: inline-block;
+    background: #eabd2b !important;
+    /*padding: 5px 10px;*/
+    border-radius: 5px;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.rw-header .rw-subtitle {
+    font-size: 8px !important;
+    font-weight: normal;
+    color: #34C759 !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Nút mở bot */
+.rw-launcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eabd2b !important;
+    /*background-image: url('gpt.png') !important;*/
+    background-size: cover !important;
+    background-position: center !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.rw-launcher img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+/* Bong bóng chat của bot */
+.rw-response {
+    background: linear-gradient(135deg, hsl(0, 2%, 46%) 0%, hsl(46, 82%, 54%) 83%); !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Bong bóng chat của người dùng */
+.rw-client {
+    background-color: #0e75ff !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Ô nhập tin nhắn */
+.rw-new-message {
+    background-color: #f4f4f4 !important;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    color: black;
+}
+
+/* Đổi màu nền phần chứa ô nhập tin nhắn */
+.rw-conversation-container .rw-footer {
+    background-color: #ffffff !important; /* Chuyển sang màu trắng */
+}
+
+/* Chỉnh màu và kiểu chữ placeholder */
+.rw-new-message::placeholder {
+    color: #808080 !important; /* Màu placeholder (xám nhạt) */
+    font-size: 14px !important; /* Kích thước chữ */
+}
+
+.rw-response a {
+    color: #007bff !important; /* Màu xanh dương giống Facebook */
+    text-decoration: none !important; /* Bỏ gạch chân */
+}
+
+.rw-response a:hover {
+    text-decoration: underline !important; /* Gạch chân khi hover */
+}
+
+/* Điều chỉnh kích thước avatar bot và user */
+/*  .rw-avatar {
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 50%; !* Làm avatar tròn *!
+  }*/
+

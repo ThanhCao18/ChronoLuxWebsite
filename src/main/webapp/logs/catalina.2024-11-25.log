@@ -1,0 +1,414 @@
+25-Nov-2024 20:21:21.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+25-Nov-2024 20:21:21.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+25-Nov-2024 20:21:21.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+25-Nov-2024 20:21:21.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+25-Nov-2024 20:21:21.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Nov-2024 20:21:21.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2024 20:21:21.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot
+25-Nov-2024 20:21:21.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS
+25-Nov-2024 20:21:21.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+25-Nov-2024 20:21:21.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:21:21.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\apache-tomcat-8.5.92
+25-Nov-2024 20:21:21.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2024 20:21:21.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2024 20:21:21.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Nov-2024 20:21:21.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Nov-2024 20:21:21.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2024 20:21:21.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\apache-tomcat-8.5.92
+25-Nov-2024 20:21:21.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:21:21.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+25-Nov-2024 20:21:21.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+25-Nov-2024 20:21:21.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2024 20:21:21.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\lib\idea_rt.jar=59155:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\bin
+25-Nov-2024 20:21:21.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+25-Nov-2024 20:21:21.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+25-Nov-2024 20:21:21.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+25-Nov-2024 20:21:21.700 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\;C:\Users\LAMDHG\AppData\Local\Microsoft\WindowsApps;C:\Users\LAMDHG\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;;C:\Users\LAMDHG\AppData\Roaming\npm;C:\Users\LAMDHG\AppData\Local\Programs\Ollama;C:\Users\LAMDHG\.dotnet\tools;.]
+25-Nov-2024 20:21:21.782 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:21:21.822 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1078 ms
+25-Nov-2024 20:21:21.923 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2024 20:21:21.924 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+25-Nov-2024 20:21:21.953 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+25-Nov-2024 20:21:29.521 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2024 20:21:36.155 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+25-Nov-2024 20:21:36.625 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+25-Nov-2024 20:21:36.632 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+25-Nov-2024 20:21:36.639 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+25-Nov-2024 20:21:37.736 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+25-Nov-2024 20:21:40.380 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+25-Nov-2024 20:21:41.138 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+25-Nov-2024 20:21:42.727 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000228: Running hbm2ddl schema update
+25-Nov-2024 20:21:42.727 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000102: Fetching database metadata
+25-Nov-2024 20:21:42.768 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000396: Updating schema
+25-Nov-2024 20:21:42.884 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill
+25-Nov-2024 20:21:42.884 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [note, address, quantity, gender, date_invoice, receiver_gender, modified_date, display_name, created_by, total, phone, user_id, subtotal, modified_by, voucher_id, receiver_name, id, created_date, receiver_phone, email, payment_method, status]
+25-Nov-2024 20:21:42.885 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b]
+25-Nov-2024 20:21:42.885 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b, primary]
+25-Nov-2024 20:21:42.926 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill_detail
+25-Nov-2024 20:21:42.927 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, product_id]
+25-Nov-2024 20:21:42.927 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:21:42.927 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:21:42.979 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.brand
+25-Nov-2024 20:21:42.980 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [icon_url, country, modified_by, name, banner_url, id, created_date, modified_date, created_by]
+25-Nov-2024 20:21:42.980 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:42.980 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.035 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.cart_items
+25-Nov-2024 20:21:43.036 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, quantity, user_id, product_id, modified_by, id, created_date, modified_date, created_by]
+25-Nov-2024 20:21:43.036 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw]
+25-Nov-2024 20:21:43.036 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw, primary]
+25-Nov-2024 20:21:43.072 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.corporation
+25-Nov-2024 20:21:43.073 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [address, img_url, phone, modified_by, about, id, created_date, modified_date, created_by, email]
+25-Nov-2024 20:21:43.073 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.073 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.109 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.post
+25-Nov-2024 20:21:43.109 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [img, modified_by, caption, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:21:43.110 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.110 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.147 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product
+25-Nov-2024 20:21:43.148 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [gender, thickness, watch_type, face_size, modified_date, created_by, glass_material, img_url, price, product_line_id, modified_by, name, id, created_date, strap_material, water_resistant, instock]
+25-Nov-2024 20:21:43.148 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_r2322tdtoib5u3jdxpcvrmb59]
+25-Nov-2024 20:21:43.148 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_r2322tdtoib5u3jdxpcvrmb59, primary]
+25-Nov-2024 20:21:43.191 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product_line
+25-Nov-2024 20:21:43.192 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [warranty_id, icon_url, modified_by, name, banner_url, id, created_date, modified_date, created_by, brand_id]
+25-Nov-2024 20:21:43.192 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy]
+25-Nov-2024 20:21:43.192 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy, primary]
+25-Nov-2024 20:21:43.234 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role
+25-Nov-2024 20:21:43.235 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [code, modified_by, name, id, created_date, modified_date, created_by]
+25-Nov-2024 20:21:43.235 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.235 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.275 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role_detail
+25-Nov-2024 20:21:43.276 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, role_id]
+25-Nov-2024 20:21:43.276 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf]
+25-Nov-2024 20:21:43.277 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_c947jy7nux8c23q2mg1op1ucf, primary]
+25-Nov-2024 20:21:43.310 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.user
+25-Nov-2024 20:21:43.311 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [password, img_url, modified_by, id, created_date, fullname, modified_date, created_by, email, reset_password_token, status, username]
+25-Nov-2024 20:21:43.311 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.311 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.336 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.voucher
+25-Nov-2024 20:21:43.337 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [end_day, code, begin_day, modified_by, discount, id, created_date, modified_date, created_by]
+25-Nov-2024 20:21:43.337 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.337 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.356 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.warranty
+25-Nov-2024 20:21:43.356 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_by, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:21:43.356 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:21:43.356 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:21:43.444 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  modified_date datetime
+25-Nov-2024 20:21:43.444 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.455 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table brand add column  modified_date datetime
+25-Nov-2024 20:21:43.455 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.521 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table cart_items add column  modified_date datetime
+25-Nov-2024 20:21:43.521 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.525 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table corporation add column  modified_date datetime
+25-Nov-2024 20:21:43.525 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.528 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table post add column  modified_date datetime
+25-Nov-2024 20:21:43.528 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.533 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product add column  modified_date datetime
+25-Nov-2024 20:21:43.533 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.621 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product_line add column  modified_date datetime
+25-Nov-2024 20:21:43.622 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.671 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table role add column  modified_date datetime
+25-Nov-2024 20:21:43.672 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.678 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table user add column  modified_date datetime
+25-Nov-2024 20:21:43.679 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.684 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table voucher add column  modified_date datetime
+25-Nov-2024 20:21:43.685 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.689 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table warranty add column  modified_date datetime
+25-Nov-2024 20:21:43.690 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:21:43.690 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000232: Schema update complete
+25-Nov-2024 20:21:52.772 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [30,815] ms
+25-Nov-2024 20:21:52.790 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:21:52.838 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 31014 ms
+25-Nov-2024 20:22:54.329 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:22:54.333 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2024 20:22:54.358 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+25-Nov-2024 20:22:54.359 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+25-Nov-2024 20:22:54.370 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:22:54.378 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:23:03.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+25-Nov-2024 20:23:03.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+25-Nov-2024 20:23:03.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+25-Nov-2024 20:23:03.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+25-Nov-2024 20:23:03.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Nov-2024 20:23:03.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2024 20:23:03.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot
+25-Nov-2024 20:23:03.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS
+25-Nov-2024 20:23:03.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+25-Nov-2024 20:23:03.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:23:03.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\apache-tomcat-8.5.92
+25-Nov-2024 20:23:03.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2024 20:23:03.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2024 20:23:03.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Nov-2024 20:23:03.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Nov-2024 20:23:03.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2024 20:23:03.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\apache-tomcat-8.5.92
+25-Nov-2024 20:23:03.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:23:03.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+25-Nov-2024 20:23:03.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+25-Nov-2024 20:23:03.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2024 20:23:03.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\lib\idea_rt.jar=59181:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\bin
+25-Nov-2024 20:23:03.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+25-Nov-2024 20:23:03.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+25-Nov-2024 20:23:03.345 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+25-Nov-2024 20:23:03.345 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\;C:\Users\LAMDHG\AppData\Local\Microsoft\WindowsApps;C:\Users\LAMDHG\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;;C:\Users\LAMDHG\AppData\Roaming\npm;C:\Users\LAMDHG\AppData\Local\Programs\Ollama;C:\Users\LAMDHG\.dotnet\tools;.]
+25-Nov-2024 20:23:03.430 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:23:03.471 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 991 ms
+25-Nov-2024 20:23:03.551 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2024 20:23:03.551 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+25-Nov-2024 20:23:03.576 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+25-Nov-2024 20:23:07.824 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2024 20:23:11.736 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+25-Nov-2024 20:23:11.963 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+25-Nov-2024 20:23:11.969 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+25-Nov-2024 20:23:11.975 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+25-Nov-2024 20:23:12.890 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+25-Nov-2024 20:23:13.920 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+25-Nov-2024 20:23:14.429 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+25-Nov-2024 20:23:15.409 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000228: Running hbm2ddl schema update
+25-Nov-2024 20:23:15.410 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000102: Fetching database metadata
+25-Nov-2024 20:23:15.470 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000396: Updating schema
+25-Nov-2024 20:23:15.596 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill
+25-Nov-2024 20:23:15.597 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [note, address, quantity, gender, date_invoice, receiver_gender, modified_date, display_name, created_by, total, phone, user_id, subtotal, modified_by, voucher_id, receiver_name, id, created_date, receiver_phone, email, payment_method, status]
+25-Nov-2024 20:23:15.597 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b]
+25-Nov-2024 20:23:15.598 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b, primary]
+25-Nov-2024 20:23:15.651 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill_detail
+25-Nov-2024 20:23:15.652 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, product_id]
+25-Nov-2024 20:23:15.653 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:23:15.654 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:23:15.699 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.brand
+25-Nov-2024 20:23:15.699 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [icon_url, country, modified_by, name, active, banner_url, id, created_date, modified_date, created_by]
+25-Nov-2024 20:23:15.699 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:15.700 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:15.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.cart_items
+25-Nov-2024 20:23:15.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, quantity, user_id, product_id, modified_by, id, created_date, modified_date, created_by]
+25-Nov-2024 20:23:15.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw]
+25-Nov-2024 20:23:15.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw, primary]
+25-Nov-2024 20:23:15.788 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.corporation
+25-Nov-2024 20:23:15.789 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [address, img_url, phone, modified_by, about, id, created_date, modified_date, created_by, email]
+25-Nov-2024 20:23:15.789 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:15.790 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:15.828 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.post
+25-Nov-2024 20:23:15.828 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [img, modified_by, caption, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:23:15.829 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:15.829 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:15.871 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product
+25-Nov-2024 20:23:15.872 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [gender, thickness, watch_type, active, face_size, modified_date, created_by, glass_material, img_url, price, product_line_id, modified_by, name, id, created_date, strap_material, water_resistant, instock]
+25-Nov-2024 20:23:15.873 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_r2322tdtoib5u3jdxpcvrmb59]
+25-Nov-2024 20:23:15.873 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_r2322tdtoib5u3jdxpcvrmb59, primary]
+25-Nov-2024 20:23:15.914 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product_line
+25-Nov-2024 20:23:15.915 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [warranty_id, icon_url, modified_by, name, active, banner_url, id, created_date, modified_date, created_by, brand_id]
+25-Nov-2024 20:23:15.915 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy]
+25-Nov-2024 20:23:15.915 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy, primary]
+25-Nov-2024 20:23:15.949 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role
+25-Nov-2024 20:23:15.950 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [code, modified_by, name, id, created_date, modified_date, created_by]
+25-Nov-2024 20:23:15.950 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:15.950 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:15.984 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role_detail
+25-Nov-2024 20:23:15.984 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, role_id]
+25-Nov-2024 20:23:15.985 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf]
+25-Nov-2024 20:23:15.985 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_c947jy7nux8c23q2mg1op1ucf, primary]
+25-Nov-2024 20:23:16.016 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.user
+25-Nov-2024 20:23:16.017 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [password, img_url, modified_by, id, created_date, fullname, modified_date, created_by, email, reset_password_token, status, username]
+25-Nov-2024 20:23:16.017 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:16.019 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:16.044 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.voucher
+25-Nov-2024 20:23:16.044 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [end_day, code, begin_day, modified_by, discount, id, created_date, modified_date, created_by]
+25-Nov-2024 20:23:16.044 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:16.044 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:16.060 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.warranty
+25-Nov-2024 20:23:16.061 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_by, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:23:16.061 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:23:16.061 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:23:16.133 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  modified_date datetime
+25-Nov-2024 20:23:16.134 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.136 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table brand add column  modified_date datetime
+25-Nov-2024 20:23:16.136 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.143 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table cart_items add column  modified_date datetime
+25-Nov-2024 20:23:16.143 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.146 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table corporation add column  modified_date datetime
+25-Nov-2024 20:23:16.146 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.149 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table post add column  modified_date datetime
+25-Nov-2024 20:23:16.149 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.156 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product add column  modified_date datetime
+25-Nov-2024 20:23:16.157 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.160 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product_line add column  modified_date datetime
+25-Nov-2024 20:23:16.161 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.164 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table role add column  modified_date datetime
+25-Nov-2024 20:23:16.164 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.167 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table user add column  modified_date datetime
+25-Nov-2024 20:23:16.167 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.172 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table voucher add column  modified_date datetime
+25-Nov-2024 20:23:16.172 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.175 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table warranty add column  modified_date datetime
+25-Nov-2024 20:23:16.175 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:23:16.176 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000232: Schema update complete
+25-Nov-2024 20:23:22.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [19,001] ms
+25-Nov-2024 20:23:22.584 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:23:22.632 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 19157 ms
+25-Nov-2024 20:24:03.534 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:24:03.537 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2024 20:24:03.558 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+25-Nov-2024 20:24:03.559 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+25-Nov-2024 20:24:03.568 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:24:03.577 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:25:26.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.92
+25-Nov-2024 20:25:26.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 9 2023 11:22:56 UTC
+25-Nov-2024 20:25:26.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.92.0
+25-Nov-2024 20:25:26.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+25-Nov-2024 20:25:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Nov-2024 20:25:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Nov-2024 20:25:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot
+25-Nov-2024 20:25:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS
+25-Nov-2024 20:25:26.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+25-Nov-2024 20:25:26.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:25:26.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\apache-tomcat-8.5.92
+25-Nov-2024 20:25:26.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2024 20:25:26.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2024 20:25:26.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Nov-2024 20:25:26.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Nov-2024 20:25:26.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2024 20:25:26.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\apache-tomcat-8.5.92
+25-Nov-2024 20:25:26.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp
+25-Nov-2024 20:25:26.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\temp
+25-Nov-2024 20:25:26.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\logging.properties
+25-Nov-2024 20:25:26.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2024 20:25:26.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\lib\idea_rt.jar=59287:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.2\bin
+25-Nov-2024 20:25:26.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+25-Nov-2024 20:25:26.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+25-Nov-2024 20:25:26.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+25-Nov-2024 20:25:26.641 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\LAMDHG\AppData\Local\Programs\Python\Python312\;C:\Users\LAMDHG\AppData\Local\Microsoft\WindowsApps;C:\Users\LAMDHG\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;;C:\Users\LAMDHG\AppData\Roaming\npm;C:\Users\LAMDHG\AppData\Local\Programs\Ollama;C:\Users\LAMDHG\.dotnet\tools;.]
+25-Nov-2024 20:25:26.717 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:25:26.761 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 953 ms
+25-Nov-2024 20:25:26.842 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2024 20:25:26.842 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.92]
+25-Nov-2024 20:25:26.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
+25-Nov-2024 20:25:30.786 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Nov-2024 20:25:34.215 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: persistence-data
+	...]
+25-Nov-2024 20:25:34.455 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {4.3.6.Final}
+25-Nov-2024 20:25:34.463 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+25-Nov-2024 20:25:34.468 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.buildBytecodeProvider HHH000021: Bytecode provider name : javassist
+25-Nov-2024 20:25:35.141 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+25-Nov-2024 20:25:36.061 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+25-Nov-2024 20:25:36.542 INFO [localhost-startStop-1] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init> HHH000397: Using ASTQueryTranslatorFactory
+25-Nov-2024 20:25:37.415 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000228: Running hbm2ddl schema update
+25-Nov-2024 20:25:37.415 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000102: Fetching database metadata
+25-Nov-2024 20:25:37.445 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000396: Updating schema
+25-Nov-2024 20:25:37.506 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill
+25-Nov-2024 20:25:37.506 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [note, address, quantity, gender, date_invoice, receiver_gender, modified_date, display_name, created_by, total, phone, user_id, subtotal, modified_by, voucher_id, receiver_name, id, created_date, receiver_phone, email, payment_method, status]
+25-Nov-2024 20:25:37.507 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b]
+25-Nov-2024 20:25:37.507 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_3ac38309d899hoderihd5mh9j, fk_5my60d5u3n18y09mgqp2t6t0b, primary]
+25-Nov-2024 20:25:37.529 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.bill_detail
+25-Nov-2024 20:25:37.529 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, product_id]
+25-Nov-2024 20:25:37.529 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:25:37.530 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_18yn4vr4gusinr921wec1ui0w, fk_293sewgbft9miq390yfh693jm]
+25-Nov-2024 20:25:37.546 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.brand
+25-Nov-2024 20:25:37.546 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [icon_url, country, modified_by, name, active, banner_url, id, created_date, modified_date, created_by]
+25-Nov-2024 20:25:37.546 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.547 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.569 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.cart_items
+25-Nov-2024 20:25:37.570 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [bill_id, quantity, user_id, product_id, modified_by, id, created_date, modified_date, created_by]
+25-Nov-2024 20:25:37.570 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw]
+25-Nov-2024 20:25:37.570 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_b5lfwcb4iitfnl3om0kg2fvsm, fk_rjiexeah9pxvqqsl3ottu7l3i, fk_stjbkkh1eftd036p0v219glxw, primary]
+25-Nov-2024 20:25:37.589 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.corporation
+25-Nov-2024 20:25:37.589 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [address, img_url, phone, modified_by, about, id, created_date, modified_date, created_by, email]
+25-Nov-2024 20:25:37.589 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.589 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.610 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.post
+25-Nov-2024 20:25:37.610 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [img, modified_by, caption, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:25:37.610 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.611 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.633 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product
+25-Nov-2024 20:25:37.633 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [gender, thickness, watch_type, active, face_size, modified_date, created_by, glass_material, img_url, price, product_line_id, modified_by, name, id, created_date, strap_material, water_resistant, instock]
+25-Nov-2024 20:25:37.633 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_r2322tdtoib5u3jdxpcvrmb59]
+25-Nov-2024 20:25:37.633 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_r2322tdtoib5u3jdxpcvrmb59, primary]
+25-Nov-2024 20:25:37.654 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.product_line
+25-Nov-2024 20:25:37.654 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [warranty_id, icon_url, modified_by, name, active, banner_url, id, created_date, modified_date, created_by, brand_id]
+25-Nov-2024 20:25:37.654 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy]
+25-Nov-2024 20:25:37.654 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_9pruqelwj7dp7lts8ulqyyc6a, fk_7y3l8d1q27c4ji42wmi538fuy, primary]
+25-Nov-2024 20:25:37.675 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role
+25-Nov-2024 20:25:37.676 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [code, modified_by, name, id, created_date, modified_date, created_by]
+25-Nov-2024 20:25:37.676 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.676 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.699 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.role_detail
+25-Nov-2024 20:25:37.699 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [user_id, role_id]
+25-Nov-2024 20:25:37.700 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: [fk_ow0q9sejbk6oqkop7d9crqbu1, fk_c947jy7nux8c23q2mg1op1ucf]
+25-Nov-2024 20:25:37.700 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [fk_c947jy7nux8c23q2mg1op1ucf, primary]
+25-Nov-2024 20:25:37.723 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.user
+25-Nov-2024 20:25:37.723 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [password, img_url, modified_by, id, created_date, fullname, modified_date, created_by, email, reset_password_token, status, username]
+25-Nov-2024 20:25:37.723 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.723 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.voucher
+25-Nov-2024 20:25:37.744 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [end_day, code, begin_day, modified_by, discount, id, created_date, modified_date, created_by]
+25-Nov-2024 20:25:37.745 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.746 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.765 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000261: Table found: chronoluxweb.warranty
+25-Nov-2024 20:25:37.765 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000037: Columns: [modified_by, id, created_date, modified_date, created_by, content]
+25-Nov-2024 20:25:37.765 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000108: Foreign keys: []
+25-Nov-2024 20:25:37.766 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.TableMetadata.<init> HHH000126: Indexes: [primary]
+25-Nov-2024 20:25:37.857 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table bill add column  modified_date datetime
+25-Nov-2024 20:25:37.858 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.864 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table brand add column  modified_date datetime
+25-Nov-2024 20:25:37.865 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.870 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table cart_items add column  modified_date datetime
+25-Nov-2024 20:25:37.870 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.875 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table corporation add column  modified_date datetime
+25-Nov-2024 20:25:37.875 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.881 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table post add column  modified_date datetime
+25-Nov-2024 20:25:37.882 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.886 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product add column  modified_date datetime
+25-Nov-2024 20:25:37.887 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.893 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table product_line add column  modified_date datetime
+25-Nov-2024 20:25:37.893 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.898 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table role add column  modified_date datetime
+25-Nov-2024 20:25:37.898 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.903 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table user add column  modified_date datetime
+25-Nov-2024 20:25:37.904 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.908 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table voucher add column  modified_date datetime
+25-Nov-2024 20:25:37.908 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.912 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000388: Unsuccessful: alter table warranty add column  modified_date datetime
+25-Nov-2024 20:25:37.914 ERROR [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute Duplicate column name 'modified_date'
+25-Nov-2024 20:25:37.914 INFO [localhost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute HHH000232: Schema update complete
+25-Nov-2024 20:25:44.186 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [G:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml] has finished in [17,321] ms
+25-Nov-2024 20:25:44.191 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:25:44.224 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 17460 ms
+25-Nov-2024 20:26:26.875 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:26:26.879 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2024 20:26:26.902 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ChronoLuxWeb] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+25-Nov-2024 20:26:26.904 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ChronoLuxWeb] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+25-Nov-2024 20:26:26.912 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2024 20:26:26.930 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

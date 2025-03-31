@@ -1,0 +1,50 @@
+.custom-select-box {
+    width: 250px;
+    padding: 7px 40px 10px 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    transition: border 0.3s ease;
+}
+
+.custom-select-box:focus {
+    border-color: #80bdff; /* Thay đổi màu viền khi focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng đổ khi focus */
+}
+
+.custom-font-20{
+    font-size: 18px;
+}
+
+.btn-tech-purple {
+    background-color: #6a0dad !important; /* Màu tím công nghệ */
+    color: #ffffff !important; /* Màu chữ trắng */
+    border-color: #5a00c1 !important; /* Viền cùng tông màu */
+}
+
+.btn-tech-purple:hover {
+    background-color: #5a00c1 !important; /* Màu tím đậm hơn khi hover */
+    border-color: #4a0099 !important;
+}
+
+.btn-tech-purple:focus,
+.btn-tech-purple:active {
+    background-color: #4a0099 !important; /* Màu tím đậm hơn khi nhấn */
+    border-color: #3a0077 !important;
+    box-shadow: 0 0 10px rgba(106, 13, 173, 0.5); /* Hiệu ứng sáng nhẹ */
+}
+
+.dim-content {
+    opacity: 0.5;
+}
+
+
+

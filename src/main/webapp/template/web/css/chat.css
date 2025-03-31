@@ -1,0 +1,36 @@
+/* Cố định kích thước dropdown */
+.dropdown-list {
+    width: 400px;  /* Điều chỉnh độ rộng */
+    max-height: 500px; /* Giới hạn chiều cao */
+    overflow-y: auto; /* Bật thanh cuộn */
+}
+
+/* Làm cho dropdown to hơn */
+.dropdown-menu {
+    font-size: 1.1rem;  /* Tăng kích thước chữ */
+    padding: 15px;
+}
+
+/* Cố định phần header */
+.dropdown-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Làm đẹp thanh cuộn */
+.dropdown-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background-color: #888; /* Màu thanh kéo */
+    border-radius: 10px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Màu khi hover */
+}
