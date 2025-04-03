@@ -15,8 +15,8 @@
 		at com.itextpdf.kernel.font.PdfFontFactory.createFont(PdfFontFactory.java:249)
 		at com.itextpdf.kernel.font.PdfFontFactory.createFont(PdfFontFactory.java:232)
 		at com.itextpdf.kernel.font.PdfFontFactory.createFont(PdfFontFactory.java:202)
-		at com.hau.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:53)
-		at com.hau.controller.admin.BillController.printInvoice(BillController.java:153)
+		at com.haui.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:53)
+		at com.haui.controller.admin.BillController.printInvoice(BillController.java:153)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -353,8 +353,8 @@ Stacktrace:] with root cause
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:88)
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:108)
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:118)
-		at com.hau.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:58)
-		at com.hau.controller.admin.BillController.printInvoice(BillController.java:153)
+		at com.haui.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:58)
+		at com.haui.controller.admin.BillController.printInvoice(BillController.java:153)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -479,8 +479,8 @@ Stacktrace:] with root cause
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:88)
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:108)
 		at com.itextpdf.io.image.ImageDataFactory.create(ImageDataFactory.java:118)
-		at com.hau.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:124)
-		at com.hau.controller.admin.BillController.printInvoice(BillController.java:153)
+		at com.haui.service.PrintPDFService.generateInvoicePdf(PrintPDFService.java:124)
+		at com.haui.controller.admin.BillController.printInvoice(BillController.java:153)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -624,8 +624,8 @@ Stacktrace:] with root cause
 02-Mar-2025 10:46:59.303 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 10:46:59.337 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 10:47:08.268 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-02-Mar-2025 10:47:13.915 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Null value was assigned to a property of primitive type setter of com.hau.entity.VoucherEntity.defaultDiscount; nested exception is org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of com.hau.entity.VoucherEntity.defaultDiscount] with root cause
-	java.lang.IllegalArgumentException: Can not set long field com.hau.entity.VoucherEntity.defaultDiscount to null value
+02-Mar-2025 10:47:13.915 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Null value was assigned to a property of primitive type setter of com.haui.entity.VoucherEntity.defaultDiscount; nested exception is org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of com.haui.entity.VoucherEntity.defaultDiscount] with root cause
+	java.lang.IllegalArgumentException: Can not set long field com.haui.entity.VoucherEntity.defaultDiscount to null value
 		at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:228)
 		at java.base/jdk.internal.reflect.FieldAccessorImpl.throwSetIllegalArgumentException(FieldAccessorImpl.java:232)
 		at java.base/jdk.internal.reflect.MethodHandleLongFieldAccessorImpl.set(MethodHandleLongFieldAccessorImpl.java:111)
@@ -678,13 +678,13 @@ Stacktrace:] with root cause
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
 		at jdk.proxy3/jdk.proxy3.$Proxy74.findValidVouchers(Unknown Source)
-		at com.hau.service.impl.VoucherServiceImpl.findValidVouchers(VoucherServiceImpl.java:45)
+		at com.haui.service.impl.VoucherServiceImpl.findValidVouchers(VoucherServiceImpl.java:45)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy103.findValidVouchers(Unknown Source)
-		at com.hau.controller.admin.VoucherController.showVouchers(VoucherController.java:26)
+		at com.haui.controller.admin.VoucherController.showVouchers(VoucherController.java:26)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -1055,7 +1055,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:13:30.975 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:13:31.026 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:13:33.120 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1092,7 +1092,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1103,8 +1103,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$45a29c41.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1114,7 +1114,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:16:43.193 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:16:43.224 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:16:44.979 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1151,7 +1151,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1162,8 +1162,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$73294e51.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1173,7 +1173,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:18:31.374 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:18:31.409 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:18:32.977 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1210,7 +1210,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1221,8 +1221,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1232,7 +1232,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:29:52.274 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:29:52.304 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:29:53.942 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1269,7 +1269,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1280,8 +1280,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$960df585.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1291,7 +1291,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:37:32.933 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:37:32.968 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:37:34.620 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1328,7 +1328,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1339,8 +1339,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$bec0f43a.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1350,7 +1350,7 @@ Stacktrace:] with root cause
 02-Mar-2025 17:40:42.157 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 17:40:42.197 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 17:40:43.794 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
-	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'JPAConfig' defined in file [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\target\classes\com\hau\config\JPAConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1155)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
@@ -1387,7 +1387,7 @@ Stacktrace:] with root cause
 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9]: Constructor threw exception; nested exception is java.util.MissingResourceException: Can't find bundle for base name application, locale en_US
 		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:154)
 		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
 		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1147)
@@ -1398,8 +1398,8 @@ Stacktrace:] with root cause
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1600)
 		at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1555)
 		at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:861)
-		at com.hau.config.JPAConfig.<init>(JPAConfig.java:24)
-		at com.hau.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9.<init>(<generated>)
+		at com.haui.config.JPAConfig.<init>(JPAConfig.java:24)
+		at com.haui.config.JPAConfig$$EnhancerBySpringCGLIB$$63431ce9.<init>(<generated>)
 		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1426,10 +1426,10 @@ Stacktrace:] with root cause
 02-Mar-2025 18:36:39.661 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 02-Mar-2025 18:36:39.698 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 02-Mar-2025 18:36:48.985 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-02-Mar-2025 18:39:15.958 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.hau.entity.BillEntity.getPaymentMethod()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.hau.entity.BillEntity.getPaymentMethod()" is null
-		at com.hau.converter.BillConverter.convertToDTO(BillConverter.java:35)
-		at com.hau.service.impl.BillServiceImpl.save(BillServiceImpl.java:96)
+02-Mar-2025 18:39:15.958 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.haui.entity.BillEntity.getPaymentMethod()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.haui.entity.BillEntity.getPaymentMethod()" is null
+		at com.haui.converter.BillConverter.convertToDTO(BillConverter.java:35)
+		at com.haui.service.impl.BillServiceImpl.save(BillServiceImpl.java:96)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
@@ -1441,7 +1441,7 @@ Stacktrace:] with root cause
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
 		at jdk.proxy3/jdk.proxy3.$Proxy86.save(Unknown Source)
-		at com.hau.controller.web.CheckoutController.addBill(CheckoutController.java:103)
+		at com.haui.controller.web.CheckoutController.addBill(CheckoutController.java:103)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)

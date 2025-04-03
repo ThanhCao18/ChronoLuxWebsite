@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
    <title><dec:title default="ChronoLux Shop"/> </title>
+    <link rel="icon" type="image/png" href="D:\clone website\ChronoLuxWebsite\ChronoLuxWebsite\src\main\webapp\template\web\css\Logo1.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <dec:head />
 

@@ -11,7 +11,7 @@ package org.apache.jsp.decorators;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import com.hau.util.SecurityUtil;
+import com.haui.util.SecurityUtil;
 
 public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent,
@@ -48,7 +48,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_imports_packages.add("javax.servlet.http");
     _jspx_imports_packages.add("javax.servlet.jsp");
     _jspx_imports_classes = new java.util.HashSet<>();
-    _jspx_imports_classes.add("com.hau.util.SecurityUtil");
+    _jspx_imports_classes.add("com.haui.util.SecurityUtil");
   }
 
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody;

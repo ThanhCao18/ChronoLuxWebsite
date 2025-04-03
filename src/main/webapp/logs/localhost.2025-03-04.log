@@ -60,9 +60,9 @@
 04-Mar-2025 10:59:15.497 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 04-Mar-2025 10:59:15.544 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 04-Mar-2025 10:59:24.660 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-04-Mar-2025 11:02:23.112 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.hau.dto.UserDTO.getId()" because "userDTO" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.hau.dto.UserDTO.getId()" because "userDTO" is null
-		at com.hau.controller.AuthenticationController.getCurrentUserId(AuthenticationController.java:48)
+04-Mar-2025 11:02:23.112 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.haui.dto.UserDTO.getId()" because "userDTO" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "com.haui.dto.UserDTO.getId()" because "userDTO" is null
+		at com.haui.controller.AuthenticationController.getCurrentUserId(AuthenticationController.java:48)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -83,7 +83,7 @@
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -123,7 +123,7 @@
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -169,7 +169,7 @@
 04-Mar-2025 17:54:04.279 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 04-Mar-2025 17:54:18.186 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
 04-Mar-2025 18:19:51.453 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
-	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.hau.Enum.VoucherType]
+	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.haui.Enum.VoucherType]
 		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:257)
 		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:210)
 		at javax.el.BeanELResolver.property(BeanELResolver.java:326)
@@ -214,7 +214,7 @@
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -254,7 +254,7 @@
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -296,7 +296,7 @@
 
 
 Stacktrace:] with root cause
-	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.hau.Enum.VoucherType]
+	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.haui.Enum.VoucherType]
 		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:257)
 		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:210)
 		at javax.el.BeanELResolver.property(BeanELResolver.java:326)
@@ -341,7 +341,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -381,7 +381,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -412,7 +412,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 04-Mar-2025 18:20:40.907 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
-	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.hau.Enum.VoucherType]
+	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.haui.Enum.VoucherType]
 		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:257)
 		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:210)
 		at javax.el.BeanELResolver.property(BeanELResolver.java:326)
@@ -457,7 +457,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -497,7 +497,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -539,7 +539,7 @@ Stacktrace:] with root cause
 
 
 Stacktrace:] with root cause
-	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.hau.Enum.VoucherType]
+	javax.el.PropertyNotFoundException: Property [displayName] not found on type [com.haui.Enum.VoucherType]
 		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:257)
 		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:210)
 		at javax.el.BeanELResolver.property(BeanELResolver.java:326)
@@ -584,7 +584,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -624,7 +624,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -664,17 +664,17 @@ Stacktrace:] with root cause
 04-Mar-2025 23:03:43.976 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 04-Mar-2025 23:03:44.019 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 04-Mar-2025 23:03:53.027 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-04-Mar-2025 23:23:12.236 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:23:12.236 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -695,7 +695,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -735,7 +735,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -765,17 +765,17 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-04-Mar-2025 23:23:15.603 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:23:15.603 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -796,7 +796,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -836,7 +836,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -866,17 +866,17 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-04-Mar-2025 23:29:04.860 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:29:04.860 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -897,7 +897,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -937,7 +937,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -967,17 +967,17 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-04-Mar-2025 23:34:08.706 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:34:08.706 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -998,7 +998,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -1038,7 +1038,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -1073,17 +1073,17 @@ Stacktrace:] with root cause
 04-Mar-2025 23:35:26.809 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 04-Mar-2025 23:35:26.875 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 04-Mar-2025 23:35:36.765 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-04-Mar-2025 23:35:49.614 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:35:49.614 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:65)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -1104,7 +1104,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -1144,7 +1144,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
@@ -1179,17 +1179,17 @@ Stacktrace:] with root cause
 04-Mar-2025 23:38:30.148 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 04-Mar-2025 23:38:30.186 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 04-Mar-2025 23:38:39.272 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcher'
-04-Mar-2025 23:40:28.987 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null] with root cause
-	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.hau.dto.VoucherConfigDTO.getId()" is null
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
-		at com.hau.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
-		at com.hau.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
+04-Mar-2025 23:40:28.987 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [dispatcher] in context with path [/ChronoLuxWeb] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null] with root cause
+	java.lang.NullPointerException: Cannot invoke "java.lang.Long.longValue()" because the return value of "com.haui.dto.VoucherConfigDTO.getId()" is null
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:21)
+		at com.haui.converter.VoucherConfigConverter.convertToEntity(VoucherConfigConverter.java:7)
+		at com.haui.service.impl.VoucherServiceImpl.updateVoucherConfig(VoucherServiceImpl.java:119)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
 		at jdk.proxy3/jdk.proxy3.$Proxy104.updateVoucherConfig(Unknown Source)
-		at com.hau.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:64)
+		at com.haui.controller.admin.VoucherController.updateVoucherConfig(VoucherController.java:64)
 		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
@@ -1210,7 +1210,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
 		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
@@ -1250,7 +1250,7 @@ Stacktrace:] with root cause
 		at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:50)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
-		at com.hau.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
+		at com.haui.config.CorsFilter.doFilterInternal(CorsFilter.java:27)
 		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
 		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
 		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)

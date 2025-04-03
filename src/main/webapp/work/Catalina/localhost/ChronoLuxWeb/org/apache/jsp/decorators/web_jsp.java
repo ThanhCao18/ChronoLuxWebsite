@@ -11,12 +11,12 @@ package org.apache.jsp.decorators;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import com.hau.util.SecurityUtil;
+import com.haui.util.SecurityUtil;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import com.hau.dto.CustomerO2Auth;
-import com.hau.dto.MyUser;
+import com.haui.dto.CustomerO2Auth;
+import com.haui.dto.MyUser;
 
 public final class web_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent,
@@ -52,9 +52,9 @@ public final class web_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_imports_packages.add("javax.servlet.http");
     _jspx_imports_packages.add("javax.servlet.jsp");
     _jspx_imports_classes = new java.util.HashSet<>();
-    _jspx_imports_classes.add("com.hau.util.SecurityUtil");
-    _jspx_imports_classes.add("com.hau.dto.CustomerO2Auth");
-    _jspx_imports_classes.add("com.hau.dto.MyUser");
+    _jspx_imports_classes.add("com.haui.util.SecurityUtil");
+    _jspx_imports_classes.add("com.haui.dto.CustomerO2Auth");
+    _jspx_imports_classes.add("com.haui.dto.MyUser");
     _jspx_imports_classes.add("org.springframework.security.core.Authentication");
     _jspx_imports_classes.add("org.springframework.security.core.context.SecurityContextHolder");
     _jspx_imports_classes.add("org.springframework.security.core.GrantedAuthority");

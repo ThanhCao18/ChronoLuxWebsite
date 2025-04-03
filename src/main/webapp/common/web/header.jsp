@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <%@ page import="com.hau.util.SecurityUtil" %>
+    <%@ page import="com.haui.util.SecurityUtil" %>
      <%@ page import="org.springframework.security.core.Authentication" %>
       <%@ page import="org.springframework.security.core.GrantedAuthority" %>
        <%@ page import="org.springframework.security.core.context.SecurityContextHolder" %>
-           <%@ page import="com.hau.dto.CustomerO2Auth" %>
-               <%@ page import="com.hau.dto.MyUser" %>
+           <%@ page import="com.haui.dto.CustomerO2Auth" %>
+               <%@ page import="com.haui.dto.MyUser" %>
                 <%@ include file="/common/taglib.jsp" %>
 
 <!-- Topbar Start -->

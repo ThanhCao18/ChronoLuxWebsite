@@ -328,7 +328,7 @@
 19-Feb-2025 20:31:33.558 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [I:\JAVA SPRING\Learn Spring\ChronoLuxWebsite\src\main\webapp\conf\Catalina\localhost\ChronoLuxWeb.xml]
 19-Feb-2025 20:31:40.025 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 19-Feb-2025 20:31:40.957 SEVERE [localhost-startStop-1] org.apache.catalina.session.StandardManager.startInternal Exception loading sessions from persistent storage
-	java.lang.ClassNotFoundException: com.hau.dto.MyUser
+	java.lang.ClassNotFoundException: com.haui.dto.MyUser
 		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1420)
 		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1228)
 		at java.base/java.lang.Class.forName0(Native Method)
