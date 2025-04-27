@@ -1,0 +1,101 @@
+@startuml Product Management Sequence Diagram
+
+actor Admin
+participant "ProductController" as PC
+participant "ProductService" as PS
+participant "ProductLineService" as PLS
+participant "BrandService" as BS
+participant "FileService" as FS
+database "Database" as DB
+
+== Xem danh sách sản phẩm ==
+Admin -> PC: GET /admin/product?page&limit&brandId&productLineId&keyword
+PC -> BS: findAllByActive(true)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> PC: List<BrandDTO>
+PC -> PLS: findAllByActive(true)
+PLS -> DB: Query product lines
+DB --> PLS: Product line list
+PLS --> PC: List<ProductLineDTO>
+alt brandId = 0 và productLineId = 0
+    PC -> PS: findAll(page, limit, keyword)
+else brandId != 0 và productLineId = 0
+    PC -> PS: findAllByBrandId(brandId, page, limit, keyword)
+else brandId = 0 và productLineId != 0
+    PC -> PS: findAllByProductLineId(productLineId, page, limit, keyword)
+else brandId != 0 và productLineId != 0
+    PC -> PS: findAllByBrandIdAndProductLineId(brandId, productLineId, page, limit, keyword)
+end
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> PC: Page<ProductDTO>
+PC --> Admin: Hiển thị trang danh sách sản phẩm
+
+== Xem trang tạo/cập nhật sản phẩm ==
+Admin -> PC: GET /admin/product/createOrUpdate?id
+PC -> BS: findAllByActive(true)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> PC: List<BrandDTO>
+PC -> PLS: findAllByActive(true)
+PLS -> DB: Query product lines
+DB --> PLS: Product line list
+PLS --> PC: List<ProductLineDTO>
+alt id != null
+    PC -> PS: findOneById(id)
+    PS -> DB: Query product
+    DB --> PS: Product data
+    PS --> PC: ProductDTO
+end
+PC --> Admin: Hiển thị form sản phẩm
+
+== Lưu sản phẩm ==
+Admin -> PC: POST /admin/product/save (productDTO, images[])
+alt images != null
+    loop for each image
+        PC -> FS: save(image)
+        FS --> PC: Image URL
+    end
+    PC -> PS: saveProduct(productDTO with image URLs)
+else
+    PC -> PS: saveProduct(productDTO)
+end
+PS -> DB: Save product
+DB --> PS: Saved product
+PS --> PC: ProductDTO
+PC --> Admin: Redirect to product list
+
+== Cập nhật trạng thái sản phẩm ==
+Admin -> PC: POST /admin/product/update-status (productId, status)
+PC -> PS: updateStatus(productId, status)
+PS -> DB: Update product status
+DB --> PS: Updated product
+PS --> PC: ProductDTO
+PC --> Admin: Redirect to product list
+
+== Xóa sản phẩm ==
+Admin -> PC: GET /admin/product/delete?id
+PC -> PS: deleteProduct(id)
+PS -> DB: Delete product
+DB --> PS: Deleted
+PS --> PC: Success
+PC --> Admin: Redirect to product list
+
+== Tìm kiếm sản phẩm ==
+Admin -> PC: GET /admin/product/search?keyword
+PC -> PS: searchProducts(keyword, page, limit)
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> PC: Page<ProductDTO>
+PC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Xem chi tiết sản phẩm ==
+Admin -> PC: GET /admin/product/detail?id
+PC -> PS: findOneById(id)
+PS -> DB: Query product
+DB --> PS: Product data
+PS --> PC: ProductDTO
+PC --> Admin: Hiển thị trang chi tiết sản phẩm
+
+@enduml 

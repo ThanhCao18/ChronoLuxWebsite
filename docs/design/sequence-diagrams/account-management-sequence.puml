@@ -1,0 +1,80 @@
+@startuml Account Management Sequence Diagram
+
+actor Admin
+participant "AccountController" as AC
+participant "UserService" as US
+participant "FileService" as FS
+participant "CartItemService" as CIS
+database "Database" as DB
+
+== Xem danh sách tài khoản ==
+Admin -> AC: GET /admin/accounts
+AC -> US: findAllAdminAccounts(adminPage, limit)
+US -> DB: Query admin accounts
+DB --> US: Admin account list
+US --> AC: Page<UserDTO>
+AC -> US: findAllUserAccounts(userPage, limit)
+US -> DB: Query user accounts
+DB --> US: User account list
+US --> AC: Page<UserDTO>
+AC --> Admin: Hiển thị trang danh sách tài khoản
+
+== Xem thông tin tài khoản admin ==
+Admin -> AC: GET /admin/admin-profile
+AC -> US: getCurrentLoggedInCustomer(authentication)
+US -> DB: Query user
+DB --> US: User data
+US --> AC: UserDTO
+AC --> Admin: Hiển thị trang thông tin tài khoản
+
+== Tạo tài khoản admin mới ==
+Admin -> AC: GET /admin/account/create
+AC --> Admin: Hiển thị form tạo tài khoản
+Admin -> AC: POST /admin/account/save (account, img)
+alt Có ảnh đại diện
+    AC -> FS: saveFile(img, "user-logos")
+    FS --> AC: avatar
+    AC -> US: save(account, "admin")
+else Không có ảnh đại diện
+    AC -> FS: handleDefaultFile("admin.png", "account-representation")
+    FS --> AC: default img
+    AC -> FS: saveFile(img, "user-logos")
+    FS --> AC: avatar
+    AC -> US: save(account, "admin")
+end
+US -> DB: Save account
+DB --> US: Saved account
+US --> AC: UserDTO
+AC --> Admin: Redirect to accounts list
+
+== Cập nhật thông tin tài khoản admin ==
+Admin -> AC: POST /admin/account/update (account, img, id)
+alt Có ảnh đại diện mới
+    AC -> FS: saveFile(img, "user-logos")
+    FS --> AC: avatar
+    AC -> US: update(account)
+else Không có ảnh đại diện mới
+    AC -> US: findOneById(id)
+    US -> DB: Query user
+    DB --> US: User data
+    US --> AC: UserDTO
+    AC -> US: update(account)
+end
+US -> DB: Update account
+DB --> US: Updated account
+US --> AC: UserDTO
+AC --> Admin: Redirect to admin profile
+
+== Xem lịch sử mua hàng của tài khoản ==
+Admin -> AC: GET /admin/account/view?id
+AC -> US: findOneById(id)
+US -> DB: Query user
+DB --> US: User data
+US --> AC: UserDTO
+AC -> CIS: findHistoryByUser(id, page, limit)
+CIS -> DB: Query history
+DB --> CIS: History list
+CIS --> AC: Page<CartItemDTO>
+AC --> Admin: Hiển thị trang lịch sử mua hàng
+
+@enduml 

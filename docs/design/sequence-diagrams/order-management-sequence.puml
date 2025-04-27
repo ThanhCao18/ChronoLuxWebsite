@@ -1,0 +1,57 @@
+@startuml Order Management Sequence Diagram
+
+actor Admin
+participant "OrderController" as OC
+participant "OrderService" as OS
+participant "ProductService" as PS
+database "Database" as DB
+
+== Xem danh sách đơn hàng ==
+Admin -> OC: GET /admin/order?page&limit&status&keyword
+OC -> OS: findAll(page, limit, status, keyword)
+OS -> DB: Query orders
+DB --> OS: Order list
+OS --> OC: Page<OrderDTO>
+OC --> Admin: Hiển thị trang danh sách đơn hàng
+
+== Xem chi tiết đơn hàng ==
+Admin -> OC: GET /admin/order/detail?id
+OC -> OS: findOneById(id)
+OS -> DB: Query order
+DB --> OS: Order data
+OS --> OC: OrderDTO
+OC --> Admin: Hiển thị trang chi tiết đơn hàng
+
+== Cập nhật trạng thái đơn hàng ==
+Admin -> OC: POST /admin/order/update-status (orderId, status)
+OC -> OS: updateStatus(orderId, status)
+OS -> DB: Update order status
+DB --> OS: Updated order
+OS --> OC: OrderDTO
+OC --> Admin: Redirect to order list
+
+== Hủy đơn hàng ==
+Admin -> OC: POST /admin/order/cancel (orderId, reason)
+OC -> OS: cancelOrder(orderId, reason)
+OS -> DB: Update order status to CANCELLED
+DB --> OS: Updated order
+OS --> OC: OrderDTO
+OC --> Admin: Redirect to order list
+
+== Xác nhận đơn hàng ==
+Admin -> OC: POST /admin/order/confirm (orderId)
+OC -> OS: confirmOrder(orderId)
+OS -> DB: Update order status to CONFIRMED
+DB --> OS: Updated order
+OS --> OC: OrderDTO
+OC --> Admin: Redirect to order list
+
+== Hoàn thành đơn hàng ==
+Admin -> OC: POST /admin/order/complete (orderId)
+OC -> OS: completeOrder(orderId)
+OS -> DB: Update order status to COMPLETED
+DB --> OS: Updated order
+OS --> OC: OrderDTO
+OC --> Admin: Redirect to order list
+
+@enduml 

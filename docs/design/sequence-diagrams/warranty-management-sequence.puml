@@ -1,0 +1,58 @@
+@startuml Warranty Management Sequence Diagram
+
+actor Admin
+participant "WarrantyController" as WC
+participant "ProductLineService" as PLS
+participant "WarrantyService" as WS
+participant "BrandService" as BS
+database "Database" as DB
+
+== Xem danh sách chính sách bảo hành ==
+Admin -> WC: GET /admin/warranty?page&limit&brandId&isHasWarranty
+WC -> BS: findAllByActive(true)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> WC: List<BrandDTO>
+alt brandId = 0 và isHasWarranty = 2
+    WC -> PLS: findAll(page, limit)
+else brandId = 0 và isHasWarranty = 1
+    WC -> PLS: findAllWithWarranty(page, limit, true)
+else brandId = 0 và isHasWarranty = 0
+    WC -> PLS: findAllWithWarranty(page, limit, false)
+else brandId != 0 và isHasWarranty = 1
+    WC -> PLS: findAllWithWarrantyByBrandId(page, limit, true, brandId)
+else brandId != 0 và isHasWarranty = 0
+    WC -> PLS: findAllWithWarrantyByBrandId(page, limit, false, brandId)
+else brandId != 0 và isHasWarranty = 2
+    WC -> PLS: findAllByBrandId(brandId, page, limit)
+end
+PLS -> DB: Query product lines
+DB --> PLS: Product line list
+PLS --> WC: Page<ProductLineDTO>
+WC --> Admin: Hiển thị trang danh sách bảo hành
+
+== Xem trang tạo/cập nhật bảo hành ==
+Admin -> WC: GET /admin/warranty/createOrUpdate?id
+WC -> WS: findOneByProductLineId(id)
+WS -> DB: Query warranty
+DB --> WS: Warranty data
+WS --> WC: WarrantyDTO
+WC --> Admin: Hiển thị form bảo hành
+
+== Lưu chính sách bảo hành ==
+Admin -> WC: POST /admin/warranty/save (warrantyDTO, productLineId)
+WC -> WS: saveWarranty(warrantyDTO)
+WS -> DB: Save warranty
+DB --> WS: Saved warranty
+WS --> WC: WarrantyDTO
+WC --> Admin: Redirect to warranty list
+
+== Xóa chính sách bảo hành ==
+Admin -> WC: GET /admin/warranty/delete?id
+WC -> WS: deleteWarrantyByProductLineId(id)
+WS -> DB: Delete warranty
+DB --> WS: Deleted
+WS --> WC: Success
+WC --> Admin: Redirect to warranty list
+
+@enduml 

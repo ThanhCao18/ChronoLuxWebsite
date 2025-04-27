@@ -1,0 +1,48 @@
+@startuml Notification Management Sequence Diagram
+
+actor Admin
+participant "NotificationController" as NC
+participant "NotificationService" as NS
+participant "UserService" as US
+participant "CommentService" as CS
+database "Database" as DB
+
+== Xem danh sách thông báo ==
+Admin -> NC: GET /admin/notifications
+NC -> US: getCurrentLoggedInCustomer(authentication)
+US --> NC: UserDTO
+NC -> NS: getNotificationsForAdmin(userId)
+NS -> DB: Query notifications
+DB --> NS: Notification list
+NS --> NC: List<NotificationDTO>
+NC --> Admin: Hiển thị danh sách thông báo
+
+== Đánh dấu đã đọc tất cả ==
+Admin -> NC: POST /admin/notifications/mark-notifications-read
+NC -> NS: markAllRead(authentication)
+NS -> DB: Update notification status
+DB --> NS: Updated notifications
+NS --> NC: Success
+NC --> Admin: Success response
+
+== Gửi thông báo cho admin ==
+CS -> NS: sendNotificationToAdmin(commentDTO, authentication)
+NS -> US: getCurrentLoggedInCustomer(authentication)
+US --> NS: UserDTO
+NS -> DB: Save notification
+DB --> NS: Saved notification
+NS -> DB: Query admin users
+DB --> NS: Admin list
+NS -> DB: Update notification admins
+DB --> NS: Updated notification
+NS --> CS: Success
+
+== Cập nhật trạng thái thông báo ==
+Admin -> NC: POST /admin/notifications/update-status (notificationId, status)
+NC -> NS: updateStatus(notificationId, status)
+NS -> DB: Update notification status
+DB --> NS: Updated notification
+NS --> NC: NotificationDTO
+NC --> Admin: Success response
+
+@enduml 

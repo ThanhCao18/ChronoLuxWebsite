@@ -1,0 +1,49 @@
+@startuml Brand Management Sequence Diagram
+
+actor Admin
+participant "BrandController" as BC
+participant "BrandService" as BS
+participant "FileService" as FS
+database "Database" as DB
+
+== Xem danh sách thương hiệu ==
+Admin -> BC: GET /admin/brand?page&limit&keyword
+BC -> BS: findAll(page, limit, keyword)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> BC: Page<BrandDTO>
+BC --> Admin: Hiển thị trang danh sách thương hiệu
+
+== Xem trang tạo/cập nhật thương hiệu ==
+Admin -> BC: GET /admin/brand/createOrUpdate?id
+alt id != null
+    BC -> BS: findOneById(id)
+    BS -> DB: Query brand
+    DB --> BS: Brand data
+    BS --> BC: BrandDTO
+end
+BC --> Admin: Hiển thị form thương hiệu
+
+== Lưu thương hiệu ==
+Admin -> BC: POST /admin/brand/save (brandDTO, image)
+alt image != null
+    BC -> FS: save(image)
+    FS --> BC: Image URL
+    BC -> BS: saveBrand(brandDTO with image URL)
+else
+    BC -> BS: saveBrand(brandDTO)
+end
+BS -> DB: Save brand
+DB --> BS: Saved brand
+BS --> BC: BrandDTO
+BC --> Admin: Redirect to brand list
+
+== Xóa thương hiệu ==
+Admin -> BC: GET /admin/brand/delete?id
+BC -> BS: deleteBrand(id)
+BS -> DB: Delete brand
+DB --> BS: Deleted
+BS --> BC: Success
+BC --> Admin: Redirect to brand list
+
+@enduml 

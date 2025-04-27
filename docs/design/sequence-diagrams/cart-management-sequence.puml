@@ -1,0 +1,106 @@
+@startuml Cart Management Sequence Diagram
+
+actor User
+participant "CartController" as CC
+participant "CartUtils" as CU
+participant "UserService" as US
+participant "ProductService" as PS
+participant "VoucherService" as VS
+database "Cookie" as C
+database "Database" as DB
+
+== Xem giỏ hàng ==
+User -> CC: GET /cart
+CC -> US: getCurrentLoggedInCustomer(authentication)
+US -> DB: Query user
+DB --> US: User data
+US --> CC: UserDTO
+CC -> VS: findByType(VoucherType.PUBLIC)
+VS -> DB: Query vouchers
+DB --> VS: Voucher list
+VS --> CC: List<VoucherDTO>
+CC -> PS: findAllByActive(true)
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> CC: List<ProductDTO>
+CC -> CU: getCartByCookieAndDeleteCookie(cookies, products, txt, response)
+CU --> CC: CartDTO
+alt User đã đăng nhập
+    CC -> VS: findOneById(userDTO.getVoucherId())
+    VS -> DB: Query voucher
+    DB --> VS: Voucher data
+    VS --> CC: VoucherDTO
+end
+CC -> CU: getCartItemByAuthentication(cartDTO, userDTO)
+CU --> CC: List<CartItemDTO>
+CC --> User: Hiển thị trang giỏ hàng
+
+== Thêm sản phẩm vào giỏ ==
+User -> CC: GET /cart/add?productId&quantity
+CC -> US: getCurrentLoggedInCustomer(authentication)
+US -> DB: Query user
+DB --> US: User data
+US --> CC: UserDTO
+CC -> C: Read cart cookie
+C --> CC: Cart data
+CC -> C: Create/Update cart cookie
+C --> CC: Success
+CC --> User: Redirect to cart page
+
+== Cập nhật số lượng sản phẩm ==
+User -> CC: GET /cart/update?productId&quantity
+CC -> PS: findAllByActive(true)
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> CC: List<ProductDTO>
+CC -> CU: getCartByCookieAndDeleteCookie(cookies, products, txt, response)
+CU --> CC: CartDTO
+alt User đã đăng nhập
+    CC -> US: getCurrentLoggedInCustomer(authentication)
+    US -> DB: Query user
+    DB --> US: User data
+    US --> CC: UserDTO
+end
+CC -> CU: Update cart item quantity
+CU --> CC: Updated CartDTO
+CC -> C: Update cart cookie
+C --> CC: Success
+CC --> User: Redirect to cart page
+
+== Xóa sản phẩm khỏi giỏ ==
+User -> CC: GET /cart/del?productId
+CC -> PS: findAllByActive(true)
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> CC: List<ProductDTO>
+CC -> CU: getCartByCookieAndDeleteCookie(cookies, products, txt, response)
+CU --> CC: CartDTO
+alt User đã đăng nhập
+    CC -> US: getCurrentLoggedInCustomer(authentication)
+    US -> DB: Query user
+    DB --> US: User data
+    US --> CC: UserDTO
+end
+CC -> CU: DeleteCartItemByProductIdAndAuthentication(userDTO, cartDTO, txt, response, productId)
+CU --> CC: Updated CartDTO
+CC --> User: Redirect to cart page
+
+== Lấy tổng số sản phẩm trong giỏ ==
+User -> CC: GET /cart/total
+alt User đã đăng nhập
+    CC -> US: getCurrentLoggedInCustomer(authentication)
+    US -> DB: Query user
+    DB --> US: User data
+    US --> CC: UserDTO
+end
+CC -> PS: findAllByActive(true)
+PS -> DB: Query products
+DB --> PS: Product list
+PS --> CC: List<ProductDTO>
+CC -> CU: getCartByCookie(cookies, products)
+CU --> CC: CartDTO
+CC -> CU: GetTotalCartItemByAuthentication(userDTO, cartDTO)
+CU --> CC: Total items
+CC --> User: Return total items
+
+@enduml 

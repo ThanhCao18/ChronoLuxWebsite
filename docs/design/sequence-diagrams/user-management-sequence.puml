@@ -1,0 +1,87 @@
+@startuml User Management Sequence Diagram
+
+actor Admin
+participant "UserController" as UC
+participant "UserService" as US
+participant "RoleService" as RS
+database "Database" as DB
+
+== Xem danh sách người dùng ==
+Admin -> UC: GET /admin/user?page&limit&roleId&keyword
+UC -> RS: findAll()
+RS -> DB: Query roles
+DB --> RS: Role list
+RS --> UC: List<RoleDTO>
+alt roleId = 0
+    UC -> US: findAll(page, limit, keyword)
+else
+    UC -> US: findAllByRoleId(roleId, page, limit, keyword)
+end
+US -> DB: Query users
+DB --> US: User list
+US --> UC: Page<UserDTO>
+UC --> Admin: Hiển thị trang danh sách người dùng
+
+== Xem trang tạo/cập nhật người dùng ==
+Admin -> UC: GET /admin/user/createOrUpdate?id
+UC -> RS: findAll()
+RS -> DB: Query roles
+DB --> RS: Role list
+RS --> UC: List<RoleDTO>
+alt id != null
+    UC -> US: findOneById(id)
+    US -> DB: Query user
+    DB --> US: User data
+    US --> UC: UserDTO
+end
+UC --> Admin: Hiển thị form người dùng
+
+== Lưu người dùng ==
+Admin -> UC: POST /admin/user/save (userDTO)
+UC -> US: saveUser(userDTO)
+US -> DB: Save user
+DB --> US: Saved user
+US --> UC: UserDTO
+UC --> Admin: Redirect to user list
+
+== Cập nhật trạng thái người dùng ==
+Admin -> UC: POST /admin/user/update-status (userId, status)
+UC -> US: updateStatus(userId, status)
+US -> DB: Update user status
+DB --> US: Updated user
+US --> UC: UserDTO
+UC --> Admin: Redirect to user list
+
+== Xóa người dùng ==
+Admin -> UC: GET /admin/user/delete?id
+UC -> US: deleteUser(id)
+US -> DB: Delete user
+DB --> US: Deleted
+US --> UC: Success
+UC --> Admin: Redirect to user list
+
+== Tìm kiếm người dùng ==
+Admin -> UC: GET /admin/user/search?keyword
+UC -> US: searchUsers(keyword, page, limit)
+US -> DB: Query users
+DB --> US: User list
+US --> UC: Page<UserDTO>
+UC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Xem chi tiết người dùng ==
+Admin -> UC: GET /admin/user/detail?id
+UC -> US: findOneById(id)
+US -> DB: Query user
+DB --> US: User data
+US --> UC: UserDTO
+UC --> Admin: Hiển thị trang chi tiết người dùng
+
+== Đổi mật khẩu người dùng ==
+Admin -> UC: POST /admin/user/change-password (userId, newPassword)
+UC -> US: changePassword(userId, newPassword)
+US -> DB: Update user password
+DB --> US: Updated user
+US --> UC: Success
+UC --> Admin: Redirect to user list
+
+@enduml 

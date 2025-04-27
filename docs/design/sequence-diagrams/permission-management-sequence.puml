@@ -1,0 +1,81 @@
+@startuml Permission Management Sequence Diagram
+
+actor Admin
+participant "PermissionController" as PC
+participant "PermissionService" as PS
+participant "RoleService" as RS
+database "Database" as DB
+
+== Xem danh sách quyền ==
+Admin -> PC: GET /admin/permission?page&limit&keyword
+PC -> PS: findAll(page, limit, keyword)
+PS -> DB: Query permissions
+DB --> PS: Permission list
+PS --> PC: Page<PermissionDTO>
+PC --> Admin: Hiển thị trang danh sách quyền
+
+== Xem trang tạo/cập nhật quyền ==
+Admin -> PC: GET /admin/permission/createOrUpdate?id
+alt id != null
+    PC -> PS: findOneById(id)
+    PS -> DB: Query permission
+    DB --> PS: Permission data
+    PS --> PC: PermissionDTO
+end
+PC --> Admin: Hiển thị form quyền
+
+== Lưu quyền ==
+Admin -> PC: POST /admin/permission/save (permissionDTO)
+PC -> PS: savePermission(permissionDTO)
+PS -> DB: Save permission
+DB --> PS: Saved permission
+PS --> PC: PermissionDTO
+PC --> Admin: Redirect to permission list
+
+== Cập nhật trạng thái quyền ==
+Admin -> PC: POST /admin/permission/update-status (permissionId, status)
+PC -> PS: updateStatus(permissionId, status)
+PS -> DB: Update permission status
+DB --> PS: Updated permission
+PS --> PC: PermissionDTO
+PC --> Admin: Redirect to permission list
+
+== Xóa quyền ==
+Admin -> PC: GET /admin/permission/delete?id
+PC -> PS: deletePermission(id)
+PS -> DB: Delete permission
+DB --> PS: Deleted
+PS --> PC: Success
+PC --> Admin: Redirect to permission list
+
+== Tìm kiếm quyền ==
+Admin -> PC: GET /admin/permission/search?keyword
+PC -> PS: searchPermissions(keyword, page, limit)
+PS -> DB: Query permissions
+DB --> PS: Permission list
+PS --> PC: Page<PermissionDTO>
+PC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Xem chi tiết quyền ==
+Admin -> PC: GET /admin/permission/detail?id
+PC -> PS: findOneById(id)
+PS -> DB: Query permission
+DB --> PS: Permission data
+PS --> PC: PermissionDTO
+PC -> RS: findAllByPermissionId(id)
+RS -> DB: Query roles
+DB --> RS: Role list
+RS --> PC: List<RoleDTO>
+PC --> Admin: Hiển thị trang chi tiết quyền
+
+== Gán quyền cho vai trò ==
+Admin -> PC: POST /admin/permission/assign-roles (permissionId, roleIds[])
+PC -> PS: assignRoles(permissionId, roleIds)
+PS -> DB: Delete existing permission roles
+DB --> PS: Deleted
+PS -> DB: Save new permission roles
+DB --> PS: Saved
+PS --> PC: Success
+PC --> Admin: Redirect to permission list
+
+@enduml 

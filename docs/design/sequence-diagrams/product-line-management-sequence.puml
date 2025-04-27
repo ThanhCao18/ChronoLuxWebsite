@@ -1,0 +1,62 @@
+@startuml Product Line Management Sequence Diagram
+
+actor Admin
+participant "ProductLineController" as PLC
+participant "ProductLineService" as PLS
+participant "BrandService" as BS
+participant "FileService" as FS
+database "Database" as DB
+
+== Xem danh sách dòng sản phẩm ==
+Admin -> PLC: GET /admin/product-line?page&limit&brandId&keyword
+PLC -> BS: findAllByActive(true)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> PLC: List<BrandDTO>
+alt brandId = 0
+    PLC -> PLS: findAll(page, limit, keyword)
+else
+    PLC -> PLS: findAllByBrandId(brandId, page, limit, keyword)
+end
+PLS -> DB: Query product lines
+DB --> PLS: Product line list
+PLS --> PLC: Page<ProductLineDTO>
+PLC --> Admin: Hiển thị trang danh sách dòng sản phẩm
+
+== Xem trang tạo/cập nhật dòng sản phẩm ==
+Admin -> PLC: GET /admin/product-line/createOrUpdate?id
+PLC -> BS: findAllByActive(true)
+BS -> DB: Query brands
+DB --> BS: Brand list
+BS --> PLC: List<BrandDTO>
+alt id != null
+    PLC -> PLS: findOneById(id)
+    PLS -> DB: Query product line
+    DB --> PLS: Product line data
+    PLS --> PLC: ProductLineDTO
+end
+PLC --> Admin: Hiển thị form dòng sản phẩm
+
+== Lưu dòng sản phẩm ==
+Admin -> PLC: POST /admin/product-line/save (productLineDTO, image)
+alt image != null
+    PLC -> FS: save(image)
+    FS --> PLC: Image URL
+    PLC -> PLS: saveProductLine(productLineDTO with image URL)
+else
+    PLC -> PLS: saveProductLine(productLineDTO)
+end
+PLS -> DB: Save product line
+DB --> PLS: Saved product line
+PLS --> PLC: ProductLineDTO
+PLC --> Admin: Redirect to product line list
+
+== Xóa dòng sản phẩm ==
+Admin -> PLC: GET /admin/product-line/delete?id
+PLC -> PLS: deleteProductLine(id)
+PLS -> DB: Delete product line
+DB --> PLS: Deleted
+PLS --> PLC: Success
+PLC --> Admin: Redirect to product line list
+
+@enduml 

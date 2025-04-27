@@ -1,0 +1,65 @@
+@startuml Login Sequence Diagram
+
+actor User
+participant "LoginController" as LC
+participant "UserService" as US
+participant "AuthenticationProviderUtil" as APU
+database "Database" as DB
+
+== Đăng nhập thông thường ==
+User -> LC: GET /login
+LC --> User: Hiển thị trang đăng nhập
+User -> LC: POST /login (username, password)
+LC -> US: findOneByUserNameAndStatus(username, status)
+US -> DB: Query user
+DB --> US: User data
+US --> LC: UserDTO
+LC -> APU: GrantedPermission(userDTO)
+APU --> LC: Authentication token
+LC --> User: Redirect to home page
+
+== Đăng nhập bằng Google ==
+User -> LC: GET /login-google?code
+LC -> "Google OAuth": Request token
+"Google OAuth" --> LC: Access token
+LC -> "Google API": Get user info
+"Google API" --> LC: UserGoogleDto
+LC -> US: findOneByEmailAndRoleCode(email, "ROLE_USER_GOOGLE")
+US -> DB: Query user
+alt User không tồn tại
+    DB --> US: null
+    US --> LC: null
+    LC -> US: save(newUserDTO, "user_google")
+    US -> DB: Save new user
+    DB --> US: Saved user
+else User đã tồn tại
+    DB --> US: User data
+    US --> LC: UserDTO
+end
+LC -> APU: GrantedPermissionO2Auth(userGoogleDto)
+APU --> LC: Authentication token
+LC --> User: Redirect to home page
+
+== Đăng nhập bằng Facebook ==
+User -> LC: GET /login-facebook?code
+LC -> "Facebook OAuth": Request token
+"Facebook OAuth" --> LC: Access token
+LC -> "Facebook API": Get user info
+"Facebook API" --> LC: UserFaceBookDto
+LC -> US: findOneByEmailAndRoleCode(email, "ROLE_USER_FACEBOOK")
+US -> DB: Query user
+alt User không tồn tại
+    DB --> US: null
+    US --> LC: null
+    LC -> US: save(newUserDTO, "user_facebook")
+    US -> DB: Save new user
+    DB --> US: Saved user
+else User đã tồn tại
+    DB --> US: User data
+    US --> LC: UserDTO
+end
+LC -> APU: GrantedPermissionO2Auth(userFaceBookDto)
+APU --> LC: Authentication token
+LC --> User: Redirect to home page
+
+@enduml 

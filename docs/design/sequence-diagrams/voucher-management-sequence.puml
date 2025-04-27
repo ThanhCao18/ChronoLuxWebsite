@@ -1,0 +1,97 @@
+@startuml Voucher Management Sequence Diagram
+
+actor Admin
+participant "VoucherController" as VC
+participant "VoucherService" as VS
+participant "VoucherConfigService" as VCS
+database "Database" as DB
+
+== Xem danh sách voucher ==
+Admin -> VC: GET /admin/voucher?page&limit&status&keyword
+VC -> VS: findAll(page, limit, status, keyword)
+VS -> DB: Query vouchers
+DB --> VS: Voucher list
+VS --> VC: Page<VoucherDTO>
+VC --> Admin: Hiển thị trang danh sách voucher
+
+== Xem trang tạo/cập nhật voucher ==
+Admin -> VC: GET /admin/voucher/createOrUpdate?id
+VC -> VCS: findAll()
+VCS -> DB: Query voucher configs
+DB --> VCS: Voucher config list
+VCS --> VC: List<VoucherConfigDTO>
+alt id != null
+    VC -> VS: findOneById(id)
+    VS -> DB: Query voucher
+    DB --> VS: Voucher data
+    VS --> VC: VoucherDTO
+end
+VC --> Admin: Hiển thị form voucher
+
+== Lưu voucher ==
+Admin -> VC: POST /admin/voucher/save (voucherDTO)
+VC -> VS: saveVoucher(voucherDTO)
+VS -> DB: Save voucher
+DB --> VS: Saved voucher
+VS --> VC: VoucherDTO
+VC --> Admin: Redirect to voucher list
+
+== Cập nhật trạng thái voucher ==
+Admin -> VC: POST /admin/voucher/update-status (voucherId, status)
+VC -> VS: updateStatus(voucherId, status)
+VS -> DB: Update voucher status
+DB --> VS: Updated voucher
+VS --> VC: VoucherDTO
+VC --> Admin: Redirect to voucher list
+
+== Xóa voucher ==
+Admin -> VC: GET /admin/voucher/delete?id
+VC -> VS: deleteVoucher(id)
+VS -> DB: Delete voucher
+DB --> VS: Deleted
+VS --> VC: Success
+VC --> Admin: Redirect to voucher list
+
+== Tìm kiếm voucher ==
+Admin -> VC: GET /admin/voucher/search?keyword
+VC -> VS: searchVouchers(keyword, page, limit)
+VS -> DB: Query vouchers
+DB --> VS: Voucher list
+VS --> VC: Page<VoucherDTO>
+VC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Xem chi tiết voucher ==
+Admin -> VC: GET /admin/voucher/detail?id
+VC -> VS: findOneById(id)
+VS -> DB: Query voucher
+DB --> VS: Voucher data
+VS --> VC: VoucherDTO
+VC --> Admin: Hiển thị trang chi tiết voucher
+
+== Cấu hình voucher ==
+Admin -> VC: GET /admin/voucher/config
+VC -> VCS: findAll()
+VCS -> DB: Query voucher configs
+DB --> VCS: Voucher config list
+VCS --> VC: List<VoucherConfigDTO>
+VC --> Admin: Hiển thị trang cấu hình voucher
+
+== Lưu cấu hình voucher ==
+Admin -> VC: POST /admin/voucher/config/save (voucherConfigDTO)
+VC -> VCS: saveVoucherConfig(voucherConfigDTO)
+VCS -> DB: Save voucher config
+DB --> VCS: Saved voucher config
+VCS --> VC: VoucherConfigDTO
+VC --> Admin: Redirect to voucher config list
+
+== Áp dụng voucher cho đơn hàng ==
+Admin -> VC: POST /admin/voucher/apply (orderId, voucherCode)
+VC -> VS: applyVoucher(orderId, voucherCode)
+VS -> DB: Query voucher
+DB --> VS: Voucher data
+VS -> DB: Update order with voucher
+DB --> VS: Updated order
+VS --> VC: OrderDTO
+VC --> Admin: Redirect to order list
+
+@enduml 

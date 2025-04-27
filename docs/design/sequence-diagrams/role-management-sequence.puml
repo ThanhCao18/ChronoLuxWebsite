@@ -1,0 +1,89 @@
+@startuml Role Management Sequence Diagram
+
+actor Admin
+participant "RoleController" as RC
+participant "RoleService" as RS
+participant "PermissionService" as PS
+database "Database" as DB
+
+== Xem danh sách vai trò ==
+Admin -> RC: GET /admin/role?page&limit&keyword
+RC -> RS: findAll(page, limit, keyword)
+RS -> DB: Query roles
+DB --> RS: Role list
+RS --> RC: Page<RoleDTO>
+RC --> Admin: Hiển thị trang danh sách vai trò
+
+== Xem trang tạo/cập nhật vai trò ==
+Admin -> RC: GET /admin/role/createOrUpdate?id
+RC -> PS: findAll()
+PS -> DB: Query permissions
+DB --> PS: Permission list
+PS --> RC: List<PermissionDTO>
+alt id != null
+    RC -> RS: findOneById(id)
+    RS -> DB: Query role
+    DB --> RS: Role data
+    RS --> RC: RoleDTO
+end
+RC --> Admin: Hiển thị form vai trò
+
+== Lưu vai trò ==
+Admin -> RC: POST /admin/role/save (roleDTO, permissionIds[])
+RC -> RS: saveRole(roleDTO, permissionIds)
+RS -> DB: Save role
+DB --> RS: Saved role
+RS -> DB: Save role permissions
+DB --> RS: Saved role permissions
+RS --> RC: RoleDTO
+RC --> Admin: Redirect to role list
+
+== Cập nhật trạng thái vai trò ==
+Admin -> RC: POST /admin/role/update-status (roleId, status)
+RC -> RS: updateStatus(roleId, status)
+RS -> DB: Update role status
+DB --> RS: Updated role
+RS --> RC: RoleDTO
+RC --> Admin: Redirect to role list
+
+== Xóa vai trò ==
+Admin -> RC: GET /admin/role/delete?id
+RC -> RS: deleteRole(id)
+RS -> DB: Delete role permissions
+DB --> RS: Deleted role permissions
+RS -> DB: Delete role
+DB --> RS: Deleted
+RS --> RC: Success
+RC --> Admin: Redirect to role list
+
+== Tìm kiếm vai trò ==
+Admin -> RC: GET /admin/role/search?keyword
+RC -> RS: searchRoles(keyword, page, limit)
+RS -> DB: Query roles
+DB --> RS: Role list
+RS --> RC: Page<RoleDTO>
+RC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Xem chi tiết vai trò ==
+Admin -> RC: GET /admin/role/detail?id
+RC -> RS: findOneById(id)
+RS -> DB: Query role
+DB --> RS: Role data
+RS --> RC: RoleDTO
+RC -> PS: findAllByRoleId(id)
+PS -> DB: Query permissions
+DB --> PS: Permission list
+PS --> RC: List<PermissionDTO>
+RC --> Admin: Hiển thị trang chi tiết vai trò
+
+== Phân quyền cho vai trò ==
+Admin -> RC: POST /admin/role/assign-permissions (roleId, permissionIds[])
+RC -> RS: assignPermissions(roleId, permissionIds)
+RS -> DB: Delete existing role permissions
+DB --> RS: Deleted
+RS -> DB: Save new role permissions
+DB --> RS: Saved
+RS --> RC: Success
+RC --> Admin: Redirect to role list
+
+@enduml 

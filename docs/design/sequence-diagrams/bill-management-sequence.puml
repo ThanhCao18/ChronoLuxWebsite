@@ -1,0 +1,98 @@
+@startuml Bill Management Sequence Diagram
+
+actor Admin
+participant "BillController" as BC
+participant "BillService" as BS
+participant "ExcelService" as ES
+participant "PrintPDFService" as PS
+database "Database" as DB
+
+== Xem danh sách đơn hàng ==
+Admin -> BC: GET /admin/bills
+BC -> BS: getBillsOrderByCreatedDateDesc(page, limit)
+BS -> DB: Query bills
+DB --> BS: Bill list
+BS --> BC: Page<BillDTO>
+BC --> Admin: Hiển thị trang danh sách đơn hàng
+
+== Xem chi tiết đơn hàng ==
+Admin -> BC: GET /admin/bill/view?id
+BC -> BS: findByIdWithDetail(id)
+BS -> DB: Query bill with details
+DB --> BS: Bill data with details
+BS --> BC: BillDTO
+BC --> Admin: Hiển thị trang chi tiết đơn hàng
+
+== Tìm kiếm đơn hàng ==
+Admin -> BC: GET /admin/bill/search?keyword
+BC -> BS: getBillByIdOrDisplayNameOrPhone(keyword, page, limit)
+BS -> DB: Query bills
+DB --> BS: Bill list
+BS --> BC: Page<BillDTO>
+BC --> Admin: Hiển thị kết quả tìm kiếm
+
+== Sắp xếp đơn hàng ==
+Admin -> BC: GET /admin/bill/sort?sortOrder
+alt sortOrder = "asc"
+    BC -> BS: getBillsOrderByCreatedDateAsc(page, limit)
+else sortOrder = "desc"
+    BC -> BS: getBillsOrderByCreatedDateDesc(page, limit)
+end
+BS -> DB: Query bills
+DB --> BS: Bill list
+BS --> BC: Page<BillDTO>
+BC --> Admin: Hiển thị danh sách đã sắp xếp
+
+== Xác nhận thanh toán ==
+Admin -> BC: GET /admin/bill/view-update/confirm-paid?id
+BC -> BS: confirmPaidBill(id)
+BS -> DB: Update bill status
+DB --> BS: Updated
+BS --> BC: Success
+BC --> Admin: Redirect to bill list
+
+== Xác nhận đã nhận hàng ==
+Admin -> BC: GET /admin/bill/view-update/confirm-received?id
+BC -> BS: confirmCustomerReceived(id)
+BS -> DB: Update bill status
+DB --> BS: Updated
+BS --> BC: Success
+BC --> Admin: Redirect to bill list
+
+== Xác nhận hoàn tiền ==
+Admin -> BC: GET /admin/bill/view-update/confirm-refund?id
+BC -> BS: confirmRefund(id)
+BS -> DB: Update bill status
+DB --> BS: Updated
+BS --> BC: Success
+BC --> Admin: Redirect to bill list
+
+== Hủy đơn hàng ==
+Admin -> BC: POST /admin/bill/view-update/confirm-cancel?id
+BC -> BS: cancelBillById(id, cancelReason)
+BS -> DB: Update bill status
+DB --> BS: Updated
+BS --> BC: Success
+BC --> Admin: Redirect to bill list
+
+== Xuất Excel ==
+Admin -> BC: GET /admin/bill/excel/export
+BC -> ES: exportBillsToExcel()
+ES -> BS: getAllBills()
+BS -> DB: Query all bills
+DB --> BS: Bill list
+BS --> ES: List<BillDTO>
+ES --> BC: Excel file bytes
+BC --> Admin: Download Excel file
+
+== In hóa đơn PDF ==
+Admin -> BC: GET /admin/bill/print-pdf?id
+BC -> BS: findByIdWithDetail(id)
+BS -> DB: Query bill with details
+DB --> BS: Bill data with details
+BS --> BC: BillDTO
+BC -> PS: generateInvoicePdf(billDTO)
+PS --> BC: PDF file bytes
+BC --> Admin: Download PDF file
+
+@enduml 

@@ -1,0 +1,78 @@
+@startuml Comment Management Sequence Diagram
+
+actor User
+actor Admin
+participant "ProductController" as PC
+participant "CommentController" as CC
+participant "CommentService" as CS
+participant "UserService" as US
+participant "NotificationService" as NS
+database "Database" as DB
+
+== Thêm bình luận ==
+User -> PC: POST /product/comment (commentDTO, img)
+PC -> CS: save(commentDTO)
+CS -> DB: Save comment
+DB --> CS: Saved comment
+CS --> PC: CommentDTO
+PC -> NS: sendNotificationToAdmin(commentDTO, authentication)
+NS -> DB: Save notification
+DB --> NS: Saved notification
+NS --> PC: Success
+PC --> User: Redirect to product detail
+
+== Xem danh sách bình luận ==
+Admin -> CC: GET /admin/comment/view?id&currentPage
+CC -> CS: getByProductIdOrderByCreateDateDesc(id)
+CS -> DB: Query comments
+DB --> CS: Comment list
+CS --> CC: List<CommentDTO>
+CC -> US: getCurrentLoggedInCustomer(authentication)
+US --> CC: UserDTO
+CC -> CS: isLike(commentId, userId)
+CS -> DB: Query comment likes
+DB --> CS: Like status
+CS --> CC: Boolean
+CC --> Admin: Hiển thị trang danh sách bình luận
+
+== Xóa bình luận ==
+Admin -> CC: GET /admin/comment/delete?id&productId&currentPage
+CC -> CS: delete(id)
+CS -> DB: Delete comment
+DB --> CS: Deleted
+CS --> CC: Success
+CC --> Admin: Redirect to comment list
+
+== Like bình luận ==
+User -> PC: POST /product/comment/like (commentId)
+PC -> CS: Like(commentId, userId)
+CS -> DB: Update comment likes
+DB --> CS: Updated comment
+CS --> PC: Like count
+PC --> User: Updated like count
+
+== Kiểm tra trạng thái like ==
+User -> PC: GET /product/comment/is-like (commentId)
+PC -> CS: isLike(commentId, userId)
+CS -> DB: Query comment likes
+DB --> CS: Like status
+CS --> PC: Boolean
+PC --> User: Like status
+
+== Tính điểm đánh giá trung bình ==
+User -> PC: GET /product/rating (productId)
+PC -> CS: calculateAverageRating(productId)
+CS -> DB: Query comments
+DB --> CS: Comment list
+CS --> PC: Average rating
+PC --> User: Average rating
+
+== Đếm số lượng đánh giá ==
+User -> PC: GET /product/rating/count (productId)
+PC -> CS: countRating(productId)
+CS -> DB: Query comments
+DB --> CS: Comment count
+CS --> PC: Count
+PC --> User: Count
+
+@enduml 
