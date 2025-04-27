@@ -23,6 +23,9 @@
     <link href="<c:url value='/css/sb-admin-2.min.css'/>" rel="stylesheet">
     <link href="<c:url value='/template/admin/css/styles.css'/>" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="icon" type="image/png"   href="<c:url value='/template/web/css/Logo1.png'/>">
+
     <!-- Custom styles for this page -->
     <link href="<c:url value='/vendor/datatables/dataTables.bootstrap4.min.css'/>" rel="stylesheet">
     <title><dec:title default="ChronoLux - Admin Page" /></title>
