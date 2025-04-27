@@ -56,7 +56,7 @@ public class BillServiceImpl implements BillService {
         List<CartItemEntity> cartItemEntities = new ArrayList<>();
         for (CartItemDTO cartItemDTO : billDTO.getCartItemDTOS()) {
             CartItemEntity cartItemEntity = cartItemConverter.convertToEntity(cartItemDTO);
-            ProductEntity productEntity = productRepository.findOneByNameAndActive(cartItemDTO.getProductName(), true);
+            ProductEntity productEntity = productRepository.findOneByNameAndActiveForUpdate(cartItemDTO.getProductName(), true);
             if(productEntity.getInstock() < Integer.parseInt(cartItemDTO.getQuantity()))
             {
                 throw new RuntimeException("không đủ sản phẩm trong kho");

@@ -23,8 +23,15 @@ public interface ProductRepository extends JpaRepository<ProductEntity,Long> {
     ProductEntity findByIdAndActive(long id,boolean active);
     List<ProductEntity> findAllByActive(boolean active);
 
+//    @Lock(LockModeType.PESSIMISTIC_WRITE)
+//    ProductEntity findOneByNameAndActiveForUpdate(String name, boolean active);
+
     @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Query("SELECT p FROM ProductEntity p WHERE p.name = :name AND p.active = :active")
+    ProductEntity findOneByNameAndActiveForUpdate(@Param("name") String name, @Param("active") boolean active);
+
     ProductEntity findOneByNameAndActive(String name, boolean active);
+
 
     @Query("SELECT COUNT(p) FROM ProductEntity p WHERE " +
             "(:gender IS NULL OR p.gender LIKE :gender) " +

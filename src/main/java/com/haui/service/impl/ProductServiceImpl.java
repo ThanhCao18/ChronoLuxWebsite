@@ -30,8 +30,12 @@ public class ProductServiceImpl implements ProductService {
     private ProductLineRepository productLineRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public ProductDTO findByName(String name) {
-        return productConverter.toDTO(productRepository.findOneByNameAndActive(name, true));
+        ProductEntity result = productRepository.findOneByNameAndActive(name, true);
+        if(result != null)
+        return productConverter.toDTO(result);
+        else return null;
     }
 
     @Override

@@ -144,8 +144,10 @@ public class ProductController {
             List<String> productSuggestionsApi = Arrays.asList(objectMapper.convertValue(jsonNode.get("san pham goi y: "), String[].class));
 
             productSuggestionsApi.forEach(productSuggestion ->{
-                ProductDTO productDTO= productService.findByName(productSuggestion);
-                productSuggestions.add(productDTO);
+                ProductDTO productDTO = productService.findByName(productSuggestion);
+                if (productDTO != null) {
+                    productSuggestions.add(productDTO);
+                }
             } );
             model.addAttribute("productByBrands",productSuggestions);
         }catch (ResourceAccessException e){
