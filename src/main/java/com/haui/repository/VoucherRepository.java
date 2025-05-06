@@ -28,4 +28,6 @@ public interface VoucherRepository extends JpaRepository<VoucherEntity,Long> {
     List<VoucherEntity> findByTypeAndActive(VoucherType type,boolean active);
 
     Optional<VoucherEntity>  findOneByIdAndActive(Long id, boolean active);
+
+    boolean existsByCode(String code);
 }

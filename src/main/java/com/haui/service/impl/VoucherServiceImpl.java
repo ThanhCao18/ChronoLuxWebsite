@@ -63,11 +63,16 @@ public class VoucherServiceImpl implements VoucherService {
     }
 
     @Override
-    public void save(VoucherDTO voucherDTO) {
-        VoucherEntity voucherEntity = voucherConverter.convertToEntity(voucherDTO);
-        voucherEntity.setActive(true);
-        voucherEntity.setType(VoucherType.PUBLIC);
-        voucherRepository.save(voucherEntity);
+    public boolean save(VoucherDTO voucherDTO) {
+        if(!this.voucherRepository.existsByCode(voucherDTO.getCode()))
+        {
+            VoucherEntity voucherEntity = voucherConverter.convertToEntity(voucherDTO);
+            voucherEntity.setActive(true);
+            voucherEntity.setType(VoucherType.PUBLIC);
+            voucherRepository.save(voucherEntity);
+            return true;
+        }
+        return false;
     }
 
     @Override

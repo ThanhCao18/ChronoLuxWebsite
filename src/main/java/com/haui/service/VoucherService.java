@@ -12,7 +12,7 @@ public interface VoucherService {
     VoucherDTO findOneByCode(String code);
     Page<VoucherDTO> findValidVouchers(int validVoucherPage, int limit);
     Page<VoucherDTO> findExpiredVouchers(int expiredVoucherPage, int limit);
-    void save(VoucherDTO voucherDTO);
+    boolean save(VoucherDTO voucherDTO);
     VoucherDTO findOneById(Long id);
     List<VoucherDTO> findByType(VoucherType voucherType);
     void setExpiredDate(String code, LocalDateTime date);

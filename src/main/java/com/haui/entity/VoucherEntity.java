@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Table(name = "voucher")
 public class VoucherEntity extends BaseEntity {
-    @Column(name = "code")
+    @Column(name = "code", unique = true)
     private String code;
     @Column(name = "discount")
     private long discount;

@@ -40,8 +40,9 @@ public class VoucherController {
                               HttpServletRequest request,
                               RedirectAttributes redirectAttributes) throws Exception {
         request.setCharacterEncoding("UTF-8");
-        voucherService.save(voucherDTO);
-        redirectAttributes.addFlashAttribute("successMessage", "Thêm mã giảm giá thành công");
+        if(voucherService.save(voucherDTO))
+            redirectAttributes.addFlashAttribute("successMessage", "Thêm mã giảm giá thành công");
+        else redirectAttributes.addFlashAttribute("errorMessage","Thêm mã giảm giá thất bại do trùng code");
         return "redirect:/admin/vouchers";
     }
 
