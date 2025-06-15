@@ -15,8 +15,8 @@ import java.util.Locale;
 
 @Service
 public class PaymentServices {
-    private static final String CLIENT_ID = "Afv4DMYmONIPvzNkw3vsXG5gd0hPeIvvVRmA6TC4AYMMW3eAOrybjvyMIjTif4PvWa6hx9y6o0XiVATI";
-    private static final String CLIENT_SECRET = "ECcJS5UVXSRL9HfU-eNRIuU7KrS8TFVldf8KrrTDwaBBPi0YZyj4_dAqUo4lVE2tqrmOEecDmDb6I0fB";
+    private static final String CLIENT_ID = "AV6r8O80WRVNfrUPM05Gr6oJmCSnPjhJttXEQtvXnhE56BK9AbVlWlVrAMq0-RfVOgqUXMvHikNkeVcK";
+    private static final String CLIENT_SECRET = "EKK6QIywVhbPpW5bfnHTPEoQbzmwp5M3vmjyB9c3TPwNfYBAU8jn7Cr0MbzpzKfkPpYqlOM2gI1BMBme";
     private static final String MODE = "sandbox";
 
     public String authorizePayment(List<CartItemDTO> cartItemDTOS, CartItemDTO cartItemDTO, HttpServletRequest request) throws PayPalRESTException {
@@ -111,9 +111,9 @@ public class PaymentServices {
         Payer payer =  new Payer();
         payer.setPaymentMethod("paypal");
         PayerInfo payerInfo = new PayerInfo();
-        payerInfo.setFirstName("DUC")
-                .setLastName("HUY")
-                .setEmail("damduc.huy@company.com");
+        payerInfo.setFirstName("CAO")
+                .setLastName("LAM THANH")
+                .setEmail("cao.lamthanh@company.com");
         payer.setPayerInfo(payerInfo);
         return payer;
     }

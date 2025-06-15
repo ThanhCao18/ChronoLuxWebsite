@@ -1,0 +1,86 @@
+@startuml Custom AI Customer Support Chatbot
+
+actor "Người dùng" as User
+participant "Web Browser" as Browser
+participant "Rasa WebChat" as WebChat
+participant "Rasa Server" as Rasa
+participant "ChronoLux API" as API
+database "Product Database" as DB
+
+== Initialization Flow ==
+Browser -> WebChat: Tải thư viện Rasa WebChat
+activate WebChat
+WebChat -> WebChat: Cấu hình Chatbot\n(Ngôn ngữ: Tiếng Việt,\nGiao diện tùy chỉnh với logo ChronoLux)
+WebChat -> Rasa: Khởi tạo kết nối\n(API Endpoint)
+activate Rasa
+Rasa --> WebChat: Kết nối thành công
+deactivate Rasa
+deactivate WebChat
+
+== Basic Interaction Flow ==
+User -> Browser: Mở cửa sổ chat
+activate Browser
+Browser -> WebChat: Hiển thị giao diện chat
+activate WebChat
+WebChat -> Rasa: Gửi lời chào mừng
+activate Rasa
+Rasa --> WebChat: Trả về lời chào
+deactivate Rasa
+WebChat --> Browser: Hiển thị lời chào
+deactivate WebChat
+Browser --> User: Hiển thị lời chào mừng
+deactivate Browser
+
+== Product Search Flow ==
+User -> Browser: Hỏi về sản phẩm
+activate Browser
+Browser -> WebChat: Gửi câu hỏi của người dùng
+activate WebChat
+WebChat -> Rasa: Chuyển tiếp câu hỏi
+activate Rasa
+Rasa -> Rasa: Xử lý ý định\n(Tìm kiếm sản phẩm)
+Rasa -> API: Yêu cầu thông tin sản phẩm
+activate API
+API -> DB: Truy vấn cơ sở dữ liệu sản phẩm
+DB --> API: Trả về dữ liệu sản phẩm
+deactivate DB
+API --> Rasa: Trả về thông tin sản phẩm
+deactivate API
+Rasa --> WebChat: Trả về phản hồi đã định dạng
+deactivate Rasa
+WebChat --> Browser: Hiển thị thông tin sản phẩm
+deactivate WebChat
+Browser --> User: Hiển thị chi tiết sản phẩm
+deactivate Browser
+
+== FAQ Response Flow ==
+User -> Browser: Hỏi về công ty/sản phẩm
+activate Browser
+Browser -> WebChat: Gửi câu hỏi của người dùng
+activate WebChat
+WebChat -> Rasa: Chuyển tiếp câu hỏi
+activate Rasa
+Rasa -> Rasa: Xử lý ý định và thực thể
+Rasa -> Rasa: So khớp với kịch bản đã train
+Rasa --> WebChat: Trả về câu trả lời FAQ
+deactivate Rasa
+WebChat --> Browser: Hiển thị câu trả lời
+deactivate WebChat
+Browser --> User: Hiển thị câu trả lời
+deactivate Browser
+
+== Error Handling Flow ==
+User -> Browser: Gửi tin nhắn
+activate Browser
+Browser -> WebChat: Chuyển tiếp tin nhắn
+activate WebChat
+WebChat -> Rasa: Gửi truy vấn
+activate Rasa
+Rasa --> WebChat: Lỗi kết nối
+deactivate Rasa
+WebChat --> Browser: Hiển thị thông báo lỗi
+deactivate WebChat
+Browser --> User: Hiển thị thông báo lỗi
+deactivate Browser
+
+@enduml 

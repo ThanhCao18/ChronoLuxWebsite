@@ -1,0 +1,89 @@
+@startuml Register Sequence Diagram
+
+actor User
+participant "RegisterController" as RC
+participant "UserService" as US
+participant "MailService" as MS
+participant "AuthenticationProviderUtil" as APU
+database "Database" as DB
+
+== Đăng ký thông thường ==
+User -> RC: GET /register
+RC --> User: Hiển thị form đăng ký
+
+User -> RC: POST /register (userDTO)
+RC -> US: findOneByUserNameAndStatus(username, status)
+US -> DB: Query user
+DB --> US: User data
+
+alt Tài khoản đã tồn tại
+    US --> RC: User exists
+    RC --> User: Hiển thị lỗi "Tài khoản đã tồn tại"
+else Tài khoản chưa tồn tại
+    RC -> US: validateUser(userDTO)
+    US --> RC: Validation result
+    
+    alt Validation thành công
+        RC -> US: saveUser(userDTO, "ROLE_USER")
+        US -> DB: Save user
+        DB --> US: Saved user
+        US --> RC: UserDTO
+        
+        RC -> MS: sendWelcomeEmail(userDTO.email)
+        MS --> RC: Success
+        
+        RC --> User: Redirect to login page
+    else Validation thất bại
+        RC --> User: Hiển thị lỗi validation
+    end
+end
+
+== Đăng ký bằng Google ==
+User -> RC: GET /register-google?code
+RC -> "Google OAuth": Request token
+"Google OAuth" --> RC: Access token
+RC -> "Google API": Get user info
+"Google API" --> RC: UserGoogleDto
+
+RC -> US: findOneByEmailAndRoleCode(email, "ROLE_USER_GOOGLE")
+US -> DB: Query user
+alt User không tồn tại
+    DB --> US: null
+    US --> RC: null
+    RC -> US: save(newUserDTO, "ROLE_USER_GOOGLE")
+    US -> DB: Save new user
+    DB --> US: Saved user
+    RC -> APU: GrantedPermissionO2Auth(userGoogleDto)
+    APU --> RC: Authentication token
+    RC --> User: Redirect to home page
+else User đã tồn tại
+    DB --> US: User data
+    US --> RC: User exists
+    RC --> User: Hiển thị lỗi "Email đã tồn tại"
+end
+
+== Đăng ký bằng Facebook ==
+User -> RC: GET /register-facebook?code
+RC -> "Facebook OAuth": Request token
+"Facebook OAuth" --> RC: Access token
+RC -> "Facebook API": Get user info
+"Facebook API" --> RC: UserFaceBookDto
+
+RC -> US: findOneByEmailAndRoleCode(email, "ROLE_USER_FACEBOOK")
+US -> DB: Query user
+alt User không tồn tại
+    DB --> US: null
+    US --> RC: null
+    RC -> US: save(newUserDTO, "ROLE_USER_FACEBOOK")
+    US -> DB: Save new user
+    DB --> US: Saved user
+    RC -> APU: GrantedPermissionO2Auth(userFaceBookDto)
+    APU --> RC: Authentication token
+    RC --> User: Redirect to home page
+else User đã tồn tại
+    DB --> US: User data
+    US --> RC: User exists
+    RC --> User: Hiển thị lỗi "Email đã tồn tại"
+end
+
+@enduml 

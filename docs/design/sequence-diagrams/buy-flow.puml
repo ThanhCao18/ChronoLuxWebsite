@@ -1,0 +1,7 @@
+@startuml
+start
+:Khách hàng ghé thăm website;
+:Xem sản phẩm trên website;
+:Đến công ty và mua hàng;
+stop
+@enduml

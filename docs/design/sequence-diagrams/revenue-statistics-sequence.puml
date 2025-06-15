@@ -1,0 +1,117 @@
+@startuml Biểu Đồ Tuần Tự Thống Kê Doanh Thu
+
+actor "Quản Trị Viên" as Admin
+participant "Trang Thống Kê\nDoanh Thu" as Page
+participant "Bộ Điều Khiển\nThống Kê" as Controller
+participant "Dịch Vụ\nĐơn Hàng" as OrderService
+participant "Dịch Vụ\nSản Phẩm" as ProductService
+participant "Dịch Vụ\nThương Hiệu" as BrandService
+participant "Dịch Vụ\nBáo Cáo" as ReportService
+database "Cơ Sở Dữ Liệu" as DB
+
+== Luồng Cơ Bản: Xem Tổng Quan Doanh Thu ==
+
+Admin -> Page: Truy cập trang thống kê doanh thu
+activate Page
+
+Page -> Controller: Yêu cầu dữ liệu tổng quan
+activate Controller
+
+Controller -> OrderService: Lấy danh sách đơn hàng hoàn thành
+activate OrderService
+OrderService -> DB: Truy vấn đơn hàng hoàn thành
+DB --> OrderService: Trả về dữ liệu đơn hàng
+OrderService --> Controller: Trả về dữ liệu đã xử lý
+deactivate OrderService
+
+Controller --> Page: Trả về dữ liệu tổng quan
+deactivate Controller
+
+Page --> Admin: Hiển thị tổng quan\n(Tổng doanh thu, Số đơn hàng, Doanh thu trung bình)
+deactivate Page
+
+== Luồng Phân Nhánh: Xem Doanh Thu Theo Thời Gian ==
+
+Admin -> Page: Chọn khoảng thời gian
+activate Page
+
+Page -> Controller: Yêu cầu doanh thu theo thời gian
+activate Controller
+
+Controller -> OrderService: Lấy đơn hàng theo khoảng thời gian
+activate OrderService
+OrderService -> DB: Truy vấn đơn hàng trong khoảng thời gian
+DB --> OrderService: Trả về dữ liệu đơn hàng
+OrderService --> Controller: Trả về dữ liệu theo thời gian
+deactivate OrderService
+
+Controller --> Page: Trả về dữ liệu doanh thu theo thời gian
+deactivate Controller
+
+Page --> Admin: Hiển thị biểu đồ doanh thu\n(Ngày/Tuần/Tháng/Năm)
+deactivate Page
+
+== Luồng Phân Nhánh: Xem Doanh Thu Theo Sản Phẩm ==
+
+Admin -> Page: Chọn thống kê theo sản phẩm
+activate Page
+
+Page -> Controller: Yêu cầu doanh thu theo sản phẩm
+activate Controller
+
+Controller -> ProductService: Lấy dữ liệu doanh thu sản phẩm
+activate ProductService
+ProductService -> DB: Truy vấn dữ liệu bán hàng sản phẩm
+DB --> ProductService: Trả về dữ liệu sản phẩm
+ProductService --> Controller: Trả về dữ liệu đã xử lý
+deactivate ProductService
+
+Controller --> Page: Trả về dữ liệu doanh thu sản phẩm
+deactivate Controller
+
+Page --> Admin: Hiển thị danh sách doanh thu sản phẩm\n(Doanh thu, Số lượng, Tỷ lệ đóng góp)
+deactivate Page
+
+== Luồng Phân Nhánh: Xem Doanh Thu Theo Thương Hiệu ==
+
+Admin -> Page: Chọn thống kê theo thương hiệu
+activate Page
+
+Page -> Controller: Yêu cầu doanh thu theo thương hiệu
+activate Controller
+
+Controller -> BrandService: Lấy dữ liệu doanh thu thương hiệu
+activate BrandService
+BrandService -> DB: Truy vấn dữ liệu bán hàng thương hiệu
+DB --> BrandService: Trả về dữ liệu thương hiệu
+BrandService --> Controller: Trả về dữ liệu đã xử lý
+deactivate BrandService
+
+Controller --> Page: Trả về dữ liệu doanh thu thương hiệu
+deactivate Controller
+
+Page --> Admin: Hiển thị danh sách doanh thu thương hiệu\n(Doanh thu, Số đơn hàng, Tỷ lệ đóng góp)
+deactivate Page
+
+== Luồng Phân Nhánh: Xuất Báo Cáo Chi Tiết ==
+
+Admin -> Page: Yêu cầu xuất báo cáo
+activate Page
+
+Page -> Controller: Yêu cầu tạo báo cáo
+activate Controller
+
+Controller -> ReportService: Tạo báo cáo chi tiết
+activate ReportService
+ReportService -> DB: Truy vấn toàn bộ dữ liệu cần thiết
+DB --> ReportService: Trả về dữ liệu báo cáo
+ReportService --> Controller: Trả về báo cáo đã tạo
+deactivate ReportService
+
+Controller --> Page: Trả về file báo cáo
+deactivate Controller
+
+Page --> Admin: Tải xuống file báo cáo\n(Định dạng Excel/PDF)
+deactivate Page
+
+@enduml 

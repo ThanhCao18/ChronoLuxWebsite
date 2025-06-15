@@ -1,0 +1,24 @@
+@startuml
+start
+:Khách hàng ghé thăm website;
+:Xem sản phẩm trên website;
+:Chọn sản phẩm muốn;
+:Bỏ vào giỏ hàng;
+if (Tiếp tục mua hàng?) then (Yes)
+  :Quay lại trang tiếp tục mua hàng;
+  repeat
+    :Chọn sản phẩm muốn;
+    :Bỏ vào giỏ hàng;
+  repeat while (Tiếp tục mua hàng?)
+endif
+:Đặt hàng;
+if (Bạn có phải là thành viên không?) then (Yes)
+  :Đăng nhập;
+else
+  :Đăng ký;
+endif
+:Xác nhận địa chỉ giao hàng và thời gian nhận hàng;
+:Chọn phương thức thanh toán;
+:Gửi đơn đặt hàng;
+stop
+@enduml

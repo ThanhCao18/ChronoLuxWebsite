@@ -1,0 +1,101 @@
+@startuml
+!theme plain
+skinparam usecase {
+  BackgroundColor lightblue
+  BorderColor black
+}
+skinparam linetype ortho
+
+' Định vị actors bên trái
+actor "Người dùng" as ND1 <<left>>
+actor "Nhân viên" as NV <<left>>
+actor "Thủ kho" as TK <<left>>
+actor "Kế toán" as KT <<left>>
+
+package "CHƯƠNG TRÌNH" {
+
+  usecase "Thêm khách hàng mới\nhoặc đăng ký có sẵn" as UC1
+  usecase "Thêm vào giỏ hàng\nThực hiện giao hàng" as UC2
+  usecase "Xem thông tin hàng hóa" as UC3
+  usecase "Xem dữ liệu phân" as UC4
+  usecase "Xem thông tin khách hàng" as UC5
+  usecase "Quản lý thông tin khách hàng" as UC6
+  usecase "Quản lý bán hàng" as UC7
+  usecase "Quản lý kho hàng" as UC8
+  usecase "Xem báo cáo bán hàng" as UC9
+  usecase "Xem thống kê doanh thu nghiệp" as UC10
+  usecase "Quản lý thanh toán khách hàng" as UC11
+  usecase "Xem thống kê" as UC12
+  usecase "Quản lý hóa đơn" as UC13
+  usecase "Sao lưu dữ liệu" as UC14
+  usecase "Quản lý người dùng" as UC15
+  usecase "Đăng nhập\nhệ thống" as LOGIN
+  usecase "Tạo tài khoản" as UC16
+  usecase "Quản lý hệ thống" as UC17
+
+}
+
+' Định vị actors bên phải
+actor "Quản trị viên" as QTV <<right>>
+actor "Facebook" as FB <<right>>
+actor "Google" as GG <<right>>
+actor "VNPay" as VNP <<right>>
+actor "Người dùng" as ND2 <<right>>
+
+' Mối quan hệ kế thừa - Quản trị viên là con của Người dùng
+ND2 <|-- QTV
+
+' Mối quan hệ từ actors bên trái (thẳng)
+ND1 -right-> UC1
+ND1 -right-> UC2
+
+NV -right-> UC3
+NV -right-> UC4
+NV -right-> UC5
+NV -right-> UC6
+NV -right-> UC7
+
+TK -right-> UC8
+
+KT -right-> UC9
+KT -right-> UC10
+KT -right-> UC11
+KT -right-> UC12
+KT -right-> UC13
+
+' Mối quan hệ từ actors bên phải (thẳng)
+QTV <-left- UC14
+QTV <-left- UC15
+QTV <-left- UC17
+
+FB <-left- LOGIN
+GG <-left- LOGIN
+VNP <-left- UC11
+ND2 <-left- UC16
+
+' Tất cả use case đều include LOGIN (đăng nhập)
+UC1 .right.> LOGIN : <<include>>
+UC2 .right.> LOGIN : <<include>>
+UC3 .right.> LOGIN : <<include>>
+UC4 .right.> LOGIN : <<include>>
+UC5 .right.> LOGIN : <<include>>
+UC6 .right.> LOGIN : <<include>>
+UC7 .right.> LOGIN : <<include>>
+UC8 .right.> LOGIN : <<include>>
+UC9 .right.> LOGIN : <<include>>
+UC10 .right.> LOGIN : <<include>>
+UC11 .right.> LOGIN : <<include>>
+UC12 .right.> LOGIN : <<include>>
+UC13 .right.> LOGIN : <<include>>
+UC14 .right.> LOGIN : <<include>>
+UC15 .right.> LOGIN : <<include>>
+UC16 .right.> LOGIN : <<include>>
+UC17 .right.> LOGIN : <<include>>
+
+' Các mối quan hệ extend
+UC6 <.left. UC1 : <<extend>>
+UC6 <.left. UC5 : <<extend>>
+UC7 <.left. UC2 : <<extend>>
+UC15 <.left. UC16 : <<extend>>
+
+@enduml
