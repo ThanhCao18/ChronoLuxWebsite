@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories:
+  - story: Người dùng hỏi về thương hiệu
+    steps:
+      - intent: ask_brand_availability
+      - slot_was_set:
+          - brand: "brand"
+      - action: action_check_brand_availability
+
+  - story: Người dùng hỏi về dòng sản phẩm
+    steps:
+      - intent: ask_product_line
+      - slot_was_set:
+          - product_line
+      - action: action_check_product_line_availability
+
+  - story: Lấy thông tin chi tiết về sản phẩm
+    steps:
+      - intent: ask_product_details
+      - action: action_get_product_details
+
+  - story: Hỏi bảo hành
+    steps:
+      - intent: ask_product_warranty
+      - action: action_get_product_warranty
+
+  - story: Hỏi mã giảm giá
+    steps:
+      - intent: ask_voucher
+      - action: action_get_voucher
+
+  - story: Chào hỏi
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Tạm biệt
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: thanh toán
+    steps:
+      - intent: ask_payment_method
+      - action: utter_ask_payment_method
+
+  - story: Thách thức chatbot
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+
+  - story: Hỏi không liên quan
+    steps:
+      - intent: nlu_out_of_scope
+      - action: utter_out_of_scope
+
+

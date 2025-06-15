@@ -1,0 +1,13 @@
+{
+  "0": "ask_brand_availability",
+  "1": "ask_payment_method",
+  "2": "ask_product_details",
+  "3": "ask_product_line",
+  "4": "ask_product_warranty",
+  "5": "ask_voucher",
+  "6": "bot_challenge",
+  "7": "goodbye",
+  "8": "greet",
+  "9": "nlu_fallback",
+  "10": "out_of_scope"
+}

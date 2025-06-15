@@ -1,0 +1,559 @@
+version: "3.1"
+
+######################## Lời chào
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - good afternoon
+      - hey there
+      - let's go
+      - hey dude
+      - chào em
+      - chào bé
+      - chào cưng
+      - chào baby
+      - xin chào
+      - chào
+      - chào bạn
+      - chào mày
+      - ê
+      - chao em
+      - chao be
+      - chao cung
+      - chao baby
+      - xin chao
+      - chao
+      - chao ban
+      - chao may
+      - e
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - bye bye
+      - see you later
+      - see you soon
+      - see you
+      - cút
+      - cut me may di
+      - cut
+      - tạm biệt
+      - tam biet
+      - tạm biệt nhé
+      - tam biet nhe em
+
+  ######################## Hỏi chatbot
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - mày là ai
+      - bạn là ai
+      - ai đây
+      - ai vậy
+      - ai đây nhỉ
+      - ai vậy nhỉ
+      - ai đây vậy
+      - ai vậy đây
+      - ai đây nhỉ
+      - ai vậy nhỉ
+      - ai đây vậy
+      - mày là bot à
+      - mày là người à
+      - bạn là ai
+      - ai đẻ ra bạn
+      - ai tạo ra bạn
+      - ai làm ra bạn
+      - ai làm ra mày
+      - ai tạo ra mày
+      - ai đẻ ra mày
+      - ai làm ra mày
+      - may la ai
+      - ban la ai
+      - ai day
+      - ai vay
+      - ai day nhi
+      - ai vay nhi
+      - ai day vay
+      - ai vay day
+      - may la bot a
+      - may la nguoi a
+      - ban la ai
+      - ai de ra ban
+      - ai tao ra ban
+      - ai lam ra ban
+      - ai lam ra may
+      - ai tao ra may
+      - ai de ra may
+      - ai lam ra may
+
+  ######################## Hỏi về thương hiệu #######################
+  - intent: ask_brand_availability
+    examples: |
+      - bán tao [rolex](brand)
+      - có [rolex](brand) ko
+      - bán [rolex](brand) không
+      - shop có bán [rolex](brand) không?
+      - bên shop có [rolex](brand) không?
+      - cửa hàng có hàng của [rolex](brand) ko?
+      - có [rolex](brand) không shop?
+      - ở đây có bán [rolex](brand) không?
+      - bán đồng hồ [rolex](brand) không?
+      - shop có hàng [rolex](brand) k?
+      - có mẫu nào của [rolex](brand) k?
+      - còn mẫu nào của [rolex](brand) không?
+      - shop bán [rolex](brand) không vậy?
+      - alo shop, có [rolex](brand) k?
+      - có đồng hồ hiệu [rolex](brand) k?
+      - bán [rolex](brand) không mấy chế?
+      - còn hàng [rolex](brand) không?
+      - shop có [rolex](brand) chính hãng không?
+      - [rolex](brand) còn hàng không shop?
+      - có cái đồng hồ [rolex](brand) nào ngon ngon k?
+      - cho xin cái giá đồng hồ [rolex](brand) đi
+      - bên shop có mẫu nào của [rolex](brand) k?
+      - đồng hồ [rolex](brand) còn hàng không shop?
+      - có hàng [rolex](brand) không vậy?
+      - có bán đồ [rolex](brand) không?
+      - còn mẫu nào của [rolex](brand) không shop?
+      - có đồng hồ nào của hãng [rolex](brand) không?
+      - shop có đồng hồ hiệu [rolex](brand) không?
+      - cửa hàng có bán [rolex](brand) ko?
+      - [rolex](brand) hàng mới về chưa?
+      - còn hàng [rolex](brand) không shop?
+      - chỗ này có bán đồng hồ [rolex](brand) không?
+      - shop có hàng hiệu [rolex](brand) không?
+      - bên mình có bán đồng hồ [rolex](brand) không?
+      - shop có hàng [rolex](brand) không vậy?
+      - chỗ này có còn [rolex](brand) không?
+      - còn mẫu nào đẹp của [rolex](brand) không shop?
+      - shop còn [rolex](brand) không?
+      - chỗ này có còn đồng hồ [rolex](brand) không?
+      - [rolex](brand) còn không shop?
+      - shop có [rolex](brand) nào không?  
+      - có hàng nào của [rolex](brand) không?
+      - shop có [rolex](brand) thiệt không?
+      - [rolex](brand) có hàng sẵn k?
+      - bên shop có hàng của [rolex](brand) k?
+      - còn đồng hồ nào của [rolex](brand) ko?
+      - có mẫu nào đẹp của [rolex](brand) ko?
+      - còn con [rolex](brand) nào không?
+      - có [rolex](brand) ?
+      - alo shop, còn hàng [rolex](brand) ko?
+      - chỗ mình có [rolex](brand) k?
+      - còn con nào của [rolex](brand) không?
+      - shop có cái nào của [rolex](brand) không?
+      - cho xin mẫu [rolex](brand) đi shop?
+      - có [rolex](brand) nào ngon k?
+      - còn hàng [rolex](brand) ko?
+      - shop có mẫu [rolex](brand) k?
+      - có cái [rolex](brand) nào mới không?
+      - bên shop có [rolex](brand) thiệt không?
+      - tôi muốn mua [rolex](brand), bạn có k?
+      - tao muốn mua [rolex](brand), mày có ko?
+      - bố muốn mua [rolex](brand), shop có không?
+      - bố muốn mua [rolex](brand), có bán cho tao ko?
+      - tao muốn mua [rolex](brand), có bán không?
+      - tao muốn mua [rolex](brand), có bán ko?
+
+  - intent: ask_product_line
+    examples: |
+      - có mẫu nào thuộc dòng [daytona](product_line) không?
+      - có con [daytona](product_line) nào của [rolex](brand) k?
+      - còn mẫu nào dòng [daytona](product_line) không shop?
+      - còn con nào [daytona](product_line) không?
+      - shop còn con [daytona](product_line) nào ko?
+      - còn [daytona](product_line) không shop?
+      - shop còn mẫu [daytona](product_line) k?
+      - shop còn [daytona](product_line) không?
+      - có đồng hồ nào thuộc dòng [daytona](product_line) ko?
+      - còn cái [daytona](product_line) nào không?
+      - còn hàng [daytona](product_line) không?
+      - shop còn mẫu [daytona](product_line) không?
+      - alo shop, còn hàng [daytona](product_line) ko?
+      - chỗ mình có [daytona](product_line) k?
+      - còn con nào của [daytona](product_line) không?
+      - shop có cái nào của [daytona](product_line) không?
+      - cho xin mẫu [daytona](product_line) đi shop?
+      - có [daytona](product_line) nào ngon k?
+      - còn hàng [daytona](product_line) ko?
+      - shop có mẫu [daytona](product_line) k?
+      - có cái [daytona](product_line) nào mới không?
+      - bên shop có [daytona](product_line) thiệt không?
+      - tôi muốn mua [daytona](product_line), bạn có k?
+      - tao muốn mua [daytona](product_line), mày có ko?
+      - bố muốn mua [daytona](product_line), shop có không?
+      - bố muốn mua [daytona](product_line), có bán cho tao ko?
+      - tao muốn mua [daytona](product_line), có bán không?
+      - tao muốn mua [daytona](product_line), có bán ko?
+      - có [daytona](product_line) ?
+      - alo shop, còn hàng [daytona](product_line) ko?
+
+  - intent: ask_product_details
+    examples: |
+      - đặc điểm của chiếc [Grand Complication Blue](product)
+      - cho tôi biết thông số của [Grand Complication Blue](product)
+      - mẫu [Grand Complication Blue](product) có thông số thế nào?
+      - chi tiết về [Grand Complication Blue](product) là gì?
+      - thông tin về chiếc [Grand Complication Blue](product)
+      - Chiếc [Grand Complication Blue](product) có thông số thế nào?
+      - Thông tin chi tiết về [Grand Complication Blue](product) là gì?
+      - Mẫu [Grand Complication Blue](product) có gì đặc biệt?
+      - Tôi muốn biết thông tin về [Grand Complication Blue](product).
+      - [Grand Complication Blue](product) có những đặc điểm nào?
+      - Chiếc [Grand Complication Blue](product) có gì nổi bật?
+      - Thông số kỹ thuật của [Grand Complication Blue](product) như thế nào?
+      - Shop cho mình xin specs của [Grand Complication Blue](product) với.
+
+  - intent: ask_product_warranty
+    examples: |
+      - Chính sách bảo hành của [Grand Complication Blue](product) thế nào?
+      - [Grand Complication Blue](product) được bảo hành bao lâu?
+      - Bảo hành của [Grand Complication Blue](product) là mấy năm?
+      - Cái [Grand Complication Blue](product) có hỗ trợ bảo hành không?
+      - [Grand Complication Blue](product) có bảo hành chính hãng không?
+      - Shop bảo hành [Grand Complication Blue](product) bao lâu?
+      - Sản phẩm [Grand Complication Blue](product) có được đổi trả nếu lỗi không?
+      - Cam kết bảo hành cho [Grand Complication Blue](product) ra sao?
+      - Nếu [Grand Complication Blue](product) bị lỗi thì có được bảo hành không?
+      - Chính sách bảo trì của [Grand Complication Blue](product) là gì?
+      - [Grand Complication Blue](product) có hậu mãi gì không?
+      - Bên mình có hỗ trợ bảo hành cho [Grand Complication Blue](product) không?
+      - Thời gian bảo hành của [Grand Complication Blue](product) là bao nhiêu?
+      - [Grand Complication Blue](product) có được bảo trì định kỳ không?
+      - Shop có bảo hành cho đồng hồ [Grand Complication Blue](product) không?
+      - Mẫu [Grand Complication Blue](product) có bảo hành chính hãng không?
+      - Nếu tôi mua [Grand Complication Blue](product), bảo hành như thế nào?
+      - [Grand Complication Blue](product) có được bảo hành miễn phí không?
+      - Điều kiện bảo hành của [Grand Complication Blue](product) là gì?
+      - Khi mua [Grand Complication Blue](product), tôi được bảo hành những gì?
+      - Bảo hành của [Grand Complication Blue](product) có áp dụng toàn cầu không?
+      - Sản phẩm [Grand Complication Blue](product) có bảo hành quốc tế không?
+      - Tôi cần thông tin về chế độ bảo hành của [Grand Complication Blue](product).
+      - Nếu [Grand Complication Blue](product) gặp lỗi, tôi cần làm gì để bảo hành?
+      - Bảo hành của [Grand Complication Blue](product) có bao gồm sửa chữa không?
+      - [Grand Complication Blue](product) được bảo hành tại trung tâm nào?
+      - Khi nào thì [Grand Complication Blue](product) không được bảo hành?
+      - [Grand Complication Blue](product) có chính sách đổi trả không?
+      - Nếu tôi muốn bảo trì [Grand Complication Blue](product), có mất phí không?
+      - Bảo dưỡng [Grand Complication Blue](product) có nằm trong bảo hành không?
+      - Nếu lỗi do người dùng thì bảo hành có áp dụng không?
+
+  - intent: ask_voucher
+    examples: |
+      - Shop có mã giảm giá nào không?
+      - Tôi có thể nhận mã giảm giá k?
+      - Hiện tại có voucher nào đang áp dụng ko?
+      - Tôi có mã khuyến mãi nào không?
+      - Mã giảm giá của shop là gì?
+      - Cửa hàng đang có chương trình khuyến mãi nào?
+      - Tôi muốn biết các mã giảm giá hiện tại.
+      - Có voucher nào đang có hiệu lực k?
+      - Tôi có mã giảm giá đặc biệt nào không?
+      - Voucher nào đang được áp dụng?
+      - Tôi có ưu đãi nào khi mua hàng ko?
+      - Mã khuyến mãi mới nhất của shop là gì?
+      - Shop có ưu đãi nào cho khách hàng lần đầu mua hàng k?
+      - Có voucher nào ko?
+      - Có mã giảm nào k?
+      - Tôi muốn kiểm tra mã giảm giá của mình.
+
+  - intent: ask_payment_method
+    examples: |
+      - Cho mình hỏi có thể thanh toán bằng cách nào?
+      - Ở đây hỗ trợ những phương thức thanh toán nào vậy?
+      - Mình có thể dùng ví điện tử để thanh toán không?
+      - Shop có hỗ trợ thanh toán qua VNPay không?
+      - Nếu mình muốn trả góp thì có hỗ trợ không?
+      - Có áp dụng quẹt thẻ tín dụng không hay chỉ nhận tiền mặt?
+      - Mình có thể trả bằng QR code không?
+      - Thanh toán kiểu gì
+      - Có hỗ trợ thanh toán bằng phương thức nào?
+      - Thanh toán như nào
+      - Thanh toán sao đây?
+      - Có nhận chuyển khoản không?
+      - Ở đây có xài Momo không?
+      - Quẹt thẻ được không nhỉ?
+      - Có phải trả trước không hay nhận hàng rồi trả?
+      - Tiền mặt hay quẹt thẻ, cái nào ổn hơn?
+      - Chỗ này có COD không?
+      - Trả góp được không
+      - Tôi có thể thanh toán bằng phương thức nào?
+      - Bạn chấp nhận những loại thẻ nào?
+      - Tôi có thể dùng ví điện tử để thanh toán không?
+      - Cửa hàng có hỗ trợ trả góp không?
+      - Tôi có thể thanh toán bằng PayPal không?
+      - Ở đây có nhận thanh toán bằng tiền mặt không?
+      - Có thể quẹt thẻ tín dụng không?
+      - Tôi muốn biết các phương thức thanh toán được hỗ trợ.
+      - Bạn có hỗ trợ chuyển khoản ngân hàng không?
+      - Có hỗ trợ thanh toán qua Momo/ZaloPay không?
+      - Tôi muốn thanh toán bằng VNPay, có được không?
+      - Có thể thanh toán bằng Bitcoin hoặc tiền điện tử khác không?
+      - Tôi có thể trả trước một phần và phần còn lại trả sau không?
+      - Có hình thức thanh toán nào không mất phí không?
+      - Tôi muốn thanh toán bằng thẻ ghi nợ, có được không?
+      - Có hỗ trợ thanh toán qua chuyển khoản ngân hàng không?
+
+  ###### LOOKUP TABLES ######
+
+  - lookup: brand
+    examples: |
+      - rolex
+      - patek philippe
+      - omega
+      - jaeger le coultre
+      - cartier
+      - audemars piguet
+      - hublot
+      - tag heuer
+      - Grand Complication Blue
+      - Speedmaster Rose Gold
+      - Grand Complications Dark
+      - Hublot Black
+      - Grand Complication Blue
+      - Tga
+      - Seamaster Navy
+      - [RE]Master Selfwinding
+      - Royal Oak White
+      - Royal Oak Metalic
+      - Royal Oak Black
+      - Royal Oak Gray
+      - Royal Oak 24k
+      - Royal Oak Ruby
+      - Seamaster SunDial
+      - Seamaster Pureness
+      - Seamaster White
+      - Seamaster MonoChrome
+      - Constellation Coffee
+      - Constellation Sun
+      - Constellation No.8
+      - Constellation Diamond
+      - Speedmaster MoonFace
+      - Daytona No.1
+      - Daytona Nightfall
+      - Daytona Skyfall
+      - Daytona Royal
+      - GMT Master II Navy
+      - GMT Juggernaut
+      - GMT Polaris
+      - GMT Chroma
+      - Submariner Shadow
+      - Submariner SubZero
+      - Day-Date Frost
+      - Day-Date Grande
+      - Submariner Green
+      - Day-Date Spring Breeze
+      - Day-Date Azure
+      - Complications Navy
+      - Complications Casino
+      - Complications Geneve
+      - Complications Mono
+      - Aquanaut Darkblue
+      - Aquanaut Gem
+      - Aquanaut 24k
+      - Aquanaut Globe
+      - Nautilus Jean
+      - Nautilus Titan
+      - Nautilus Baege
+
+  - lookup: product_line
+    examples: |
+      - Submariner
+      - Speedmaster
+      - Seamaster
+      - Royal Oak
+      - Reverso
+      - Rendez-Vous
+      - Porsche
+      - Polaris
+      - Nautilus
+      - Master
+      - GMT Master
+      - Duometre
+      - DeVille
+      - daytona
+      - Day-Date
+      - Constellation
+      - Complications
+      - Code 11.59
+      - Big Bang
+      - Aquanaut
+      - [Re]Master
+
+  - lookup: product
+    examples: |
+      - Grand Complication Blue
+      - Speedmaster Rose Gold
+      - Grand Complications Dark
+      - Hublot Black
+      - Grand Complication Blue
+      - Tga
+      - Seamaster Navy
+      - [RE]Master Selfwinding
+      - Royal Oak White
+      - Royal Oak Metalic
+      - Royal Oak Black
+      - Royal Oak Gray
+      - Royal Oak 24k
+      - Royal Oak Ruby
+      - Seamaster SunDial
+      - Seamaster Pureness
+      - Seamaster White
+      - Seamaster MonoChrome
+      - Constellation Coffee
+      - Constellation Sun
+      - Constellation No.8
+      - Constellation Diamond
+      - Speedmaster MoonFace
+      - Daytona No.1
+      - Daytona Nightfall
+      - Daytona Skyfall
+      - Daytona Royal
+      - GMT Master II Navy
+      - GMT Juggernaut
+      - GMT Polaris
+      - GMT Chroma
+      - Submariner Shadow
+      - Submariner SubZero
+      - Day-Date Frost
+      - Day-Date Grande
+      - Submariner Green
+      - Day-Date Spring Breeze
+      - Day-Date Azure
+      - Complications Navy
+      - Complications Casino
+      - Complications Geneve
+      - Complications Mono
+      - Aquanaut Darkblue
+      - Aquanaut Gem
+      - Aquanaut 24k
+      - Aquanaut Globe
+      - Nautilus Jean
+      - Nautilus Titan
+      - Nautilus Baege
+  
+
+  ############################### Hỏi linh tinh #########################################
+  - intent: nlu_fallback
+    examples: |
+      - ajfkfjofkfok;kp;wkpd
+      - asdflkjasdf
+      - qwerqwer
+      - zxcvbnm
+      - 1234567890
+      - 0987654321
+      - 1234567890
+      - à si ba sng
+      - ưerqwer
+      - meo meo
+      - meo meo meo
+      - gâu gâu
+      - gâu gâu gâu
+      - meo meo meo meo
+      - gau gau
+      - bs usllw;
+
+  - intent: out_of_scope
+    examples: |
+      - u với y thì cái nào đẹp hơn?
+      - so sánh a và n cho tôi biết.
+      - so sánh iphone với samsung.
+      - giá iPhone mới nhất hiện nay là bao nhiêu?
+      - hôm nay thời tiết Hà Nội thế nào?
+      - bạn có thể cho tôi biết tin tức bóng đá hôm nay không?
+      - cách nấu phở truyền thống thế nào?
+      - làm thế nào để sửa máy tính?
+      - cửa hàng có bán quần áo không?
+      - tôi cần thông tin về vé máy bay đi châu Âu.
+      - sản phẩm nào tốt hơn, huy hay hoa?
+      - so sánh đồng hồ và điện thoại.
+      - chỗ này có bán đồ điện tử không?
+      - bạn có biết gì về điện ảnh không?
+      - với omega và rolex thì bạn thích mẫu nào hơn?
+      - điện thoại của apple so với samsung thế nào?
+      - samsung với oppo, cái nào tốt hơn?
+      - iphone có đẹp hơn không?
+      - iphone và macbook khác nhau như thế nào?
+      - xin cho biết thông tin về giá vé xem phim.
+      - thông tin về giày dép của nike.
+      - bạn có thể giúp tôi tìm hiểu về xe hơi không?
+      - tôi muốn mua điện thoại di động, bạn có gợi ý nào không?
+      - tôi cần thông tin về phòng khách sạn tại Hà Nội.
+      - thông tin về giá vé máy bay đi Đà Nẵng.
+      - sản phẩm này không thuộc danh mục đồng hồ, vui lòng đặt câu hỏi về đồng hồ, giá cả, mã giảm giá hoặc phương thức thanh toán.
+      - tôi không muốn hỏi về điện thoại, chỉ hỏi về đồng hồ thôi.
+      - thông tin về khuyến mãi của điện thoại là gì?
+      - so sanh iphone voi samsung.
+      - gia iphone moi nhat hien nay la bao nhieu?
+      - hom nay thoi tiet Ha Noi the nao?
+      - ban co the cho toi biet tin tuc bong da hom nay khong?
+      - cach nau pho truyen thong the nao?
+      - lam the nao de sua may tinh?
+      - cua hang co ban quan ao khong?
+      - toi can thong tin ve ve may bay di chau Au.
+      - san pham nao tot hon, rolex hay casio?
+      - so sanh dong ho va dien thoai.
+      - cho toi biet cua hang co ban do dien tu khong?
+      - ban co biet gi ve dien anh khong?
+      - dien thoai apple so voi samsung the nao?
+      - samsung voi oppo, cai nao tot hon?
+      - iphone co dep hon khong?
+      - iphone va macbook khac nhau nhu the nao?
+      - xin cho biet thong tin ve gia ve xem phim.
+      - thong tin ve giay dep cua nike.
+      - ban co the giup toi tim hieu ve xe hoi khong?
+      - toi muon mua dien thoai di dong, ban co goi y nao?
+      - toi can thong tin ve phong khach san tai Ha Noi.
+      - thong tin ve gia ve may bay di Da Nang.
+      - san pham nay khong thuoc danh muc dong ho, vui long dat cau hoi ve dong ho, gia ca, ma giam gia hoac phuong thuc thanh toan.
+      - toi khong muon hoi ve dien thoai, chi hoi ve dong ho thoi.
+      - thong tin ve khuyen mai cua dien thoai la gi?
+#########################################
+#- intent: ask_brand_with_product_line
+#  examples: |
+#    - có [rolex](brand) [daytona](product_line) không?
+#    - shop có [rolex](brand) [daytona](product_line) không?
+#    - chỗ này có đồng hồ [rolex](brand) dòng [daytona](product_line) không?
+#    - bên mình có [rolex](brand) [daytona](product_line) không?
+#    - có mẫu nào thuộc dòng [daytona](product_line) không?
+#    - đồng hồ [rolex](brand) dòng [daytona](product_line) có hàng không?
+#    - có còn con [rolex](brand) [daytona](product_line) nào không?
+#    - [rolex](brand) [daytona](product_line) còn hàng không?
+#    - có con [daytona](product_line) nào của [rolex](brand) không?
+#    - còn mẫu nào dòng [daytona](product_line) không shop?
+#    - còn con nào [daytona](product_line) không?
+#    - có hàng nào [rolex](brand) [daytona](product_line) không?
+#    - còn mẫu nào [rolex](brand) [daytona](product_line) không?
+#    - shop còn con [daytona](product_line) nào không?
+#    - còn [daytona](product_line) không shop?
+#    - [rolex](brand) [daytona](product_line) shop có không?
+#    - shop còn [rolex](brand) [daytona](product_line) không?
+#    - shop còn mẫu [daytona](product_line) không?
+#    - alo, bên shop còn con nào của [rolex](brand) không?
+#    - shop còn [daytona](product_line) không?
+#    - có đồng hồ nào thuộc dòng [daytona](product_line) không?
+#    - còn cái [daytona](product_line) nào không?
+#    - còn đồng hồ nào của [rolex](brand) [daytona](product_line) không?
+#
+#- intent: ask_min_price_detail
+#  examples: |
+#    - shop có cái nào [rolex](brand) rẻ rẻ không?
+#    - có đồng hồ [rolex](brand) nào giá rẻ không?
+#    - có con [rolex](brand) nào rẻ rẻ không?
+#    - có cái [rolex](brand) nào giá mềm không?
+#    - có mẫu nào của [rolex](brand) giá tốt không?
+
+#- lookup: product_line
+#  examples: data/lookup/product_lines.txt
+
+

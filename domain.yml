@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - ask_brand_availability
+  - nlu_fallback
+  - ask_product_line
+  - nlu_out_of_scope
+  - ask_product_details
+  - ask_product_warranty
+  - ask_voucher
+
+actions:
+  - action_check_brand_availability
+  - action_default_fallback
+  - action_check_product_line_availability
+  - action_get_product_details
+  - action_get_product_warranty
+  - action_get_voucher
+
+entities:
+  - brand
+  - product_line
+  - product
+
+slots:
+  brand:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: brand
+      - type: from_text
+        intent: ask_brand_availability
+        not_intent: [ greet, goodbye ]
+  product_line:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_line
+      - type: from_text
+        intent: ask_brand_with_product_line
+        not_intent: [ greet, goodbye ]
+  product:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product
+      - type: from_text
+        intent:
+          - ask_product_details
+          - ask_product_warranty
+        not_intent: [ greet, goodbye ]
+
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi là ChronoLux Chatbot. Tôi có thể giúp gì cho bạn?"
+
+  utter_goodbye:
+    - text: "Rất vui khi được giúp bạn. Hẹn gặp lại!"
+
+  utter_bot_challenge:
+    - text: "Tôi là ChronoLux Chatbot. Tôi được tạo ra bởi Lâm Thanh Cao lớp CNTT02 K16 khoa CNTT trường ĐH Công Nghiệp Hà Nội.\n Bạn có thể liên hệ để được hỗ trợ qua số điện thoại: 0984262308 hoặc qua email: thanhcao9323g@gmail.com"
+
+  utter_fallback:
+    - text: "Xin lỗi, tôi chưa hiểu câu hỏi của bạn. Bạn có thể diễn đạt lại không?"
+
+  utter_out_of_scope:
+    - text: "Xin lỗi, tôi chỉ có nhiệm vụ giải đáp về các mẫu mã đồng hồ, giá cả, mã giảm giá, các phương thức thanh toán. Vui lòng đặt câu hỏi phù hợp cho tôi!"
+
+  utter_ask_payment_method:
+    - text: |
+        Shop hiện tại hỗ trợ các phương thức thanh toán sau:
+        1. Thanh toán khi nhận hàng
+        2. Thanh toán qua chuyển khoản ngân hàng
+        3. Thanh toán qua ví điện tử VNPAY
+        4. Thanh toán qua PayPal
+#session_config:
+#  session_expiration_time: 60
+#  carry_over_slots_to_new_session: true

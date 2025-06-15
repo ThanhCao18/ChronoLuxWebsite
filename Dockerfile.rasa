@@ -1,0 +1,17 @@
+# Sử dụng image chính thức của Rasa
+FROM rasa/rasa:3.6.2
+
+# Đặt user thành root để tránh lỗi quyền truy cập
+USER root
+
+# Tạo thư mục làm việc
+WORKDIR /app
+
+# Copy toàn bộ project vào container
+COPY . .
+
+# Expose port của Rasa
+EXPOSE 5005
+
+# Chạy Rasa Server
+CMD rasa run --enable-api --cors "*" --debug

@@ -1,0 +1,7 @@
+version: "3.1"
+
+rules:
+  - rule: Phản hồi fallback khi không hiểu
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback

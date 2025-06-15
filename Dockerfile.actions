@@ -1,0 +1,18 @@
+# Sử dụng image chính thức của Rasa SDK
+FROM rasa/rasa-sdk:3.6.2
+
+# Tạo thư mục làm việc
+WORKDIR /app
+
+# Copy toàn bộ project vào container
+COPY . .
+
+# Tạo entrypoint script
+RUN echo '#!/bin/bash\npython -m rasa_sdk --actions actions.actions --port 5055' > /app/entrypoint.sh && \
+    chmod +x /app/entrypoint.sh
+
+# Expose port của Action Server
+EXPOSE 5055
+
+# Chạy Action Server
+ENTRYPOINT ["/app/entrypoint.sh"]
